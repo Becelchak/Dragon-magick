@@ -86,7 +86,7 @@ public class Dragon_move : MonoBehaviour
         if (!is_attack)
         {
             coldown_timer += Time.deltaTime;
-            Debug.Log($"cooldown {coldown_timer}");
+            //Debug.Log($"cooldown {coldown_timer}");
 
         }
         // If attack - wait some second

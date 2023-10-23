@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,7 +6,7 @@ using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
-    private float speed = 0.1f;
+    private float speed = 0.05f;
     [SerializeField] private bool isExplosion = false;
     private GameObject target;
     private Animator animator;
@@ -27,12 +28,19 @@ public class Fireball : MonoBehaviour
         var sprite = GetComponent<SpriteRenderer>();
         sprite.sortingLayerName = "GameObjects";
         sprite.sortingOrder = 4;
-
     }
 
     public  void Initialize(GameObject target)
     {
         this.target = target;
+
+        // Get Angle in Radians
+        float AngleRad = Mathf.Atan2(target.transform.position.y - transform.position.y, target.transform.position.x - transform.position.x);
+        // Get Angle in Degrees
+        float AngleDeg = (180 / Mathf.PI) * AngleRad;
+        // Rotate Object
+        this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+
     }
     void Update()
     {
@@ -44,20 +52,24 @@ public class Fireball : MonoBehaviour
                 Destroy(gameObject);
 
         }
-
-        if (timer < 2)
-            timer += Time.deltaTime;
-        if (timer > 2)
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed);
+        else
+        {
+            if (timer < 2)
+                timer += Time.deltaTime;
+            if (timer > 2)
+                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed);
+        }
 
     }
 
     void OnTriggerEnter(Collider collision)
     {
         isExplosion = true;
+        collision.GetComponent<Building_logick>().Destroy();
     }
     void OnTriggerStay(Collider collision)
     {
         isExplosion = true;
+        collision.GetComponent<Building_logick>().Destroy();
     }
 }
