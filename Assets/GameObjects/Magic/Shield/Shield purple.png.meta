@@ -1,0 +1,1951 @@
+fileFormatVersion: 2
+guid: 4316dc3611040f04487b9f82848ac83f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shield purple_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 5280
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f79bf08610273d46b2a25ae1c9a3cc7
+      internalID: -276197081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_1
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 5283
+        width: 440
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae35a2573e187bf44a69bdd18c8bf489
+      internalID: -502287779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_2
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 5278
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff5b3ba2c53fe140beaf395e950e22a
+      internalID: 65447781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_3
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 5287
+        width: 440
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a2c7c0627d69641a78bcf686e81efe
+      internalID: 1192507878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_4
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 5284
+        width: 440
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6abc81459ef7947bde93b3eed04938
+      internalID: -1885604237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_5
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 5287
+        width: 440
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ad8db6c33abce489558f1048e1c9b8
+      internalID: -1978569636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_6
+      rect:
+        serializedVersion: 2
+        x: 3237
+        y: 5294
+        width: 440
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189b7ba2822e590448a72f9da5681107
+      internalID: 836171643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4801
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfff5266262d9146b5859c9ecf52c88
+      internalID: 390908026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_8
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 4803
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2b7447fa0c1484796a33e734a5401b
+      internalID: -1300790112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_9
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 4797
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae0774f384eeb8428351b033307a624
+      internalID: -1330082487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_10
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 4806
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60288872ad3b3a54bb7b0a2420a52c2f
+      internalID: 587735473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_11
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 4805
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d42958ad19e5f843b097d9ed9d15784
+      internalID: 574966105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_12
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 4806
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4818b315499584ab1fb52597a9b952
+      internalID: -374039522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_13
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 4811
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000e6de57fd101a40bce61477ea09f8e
+      internalID: -1611182312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 4321
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6475752b01523dc45a7b9fd0010f4352
+      internalID: -1942186793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_15
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 4326
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166bdebc8f11bd8449204fcadeaf1481
+      internalID: 285919916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_16
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 4315
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572d6b2832cafe8469e1df00522f6e7f
+      internalID: 275200425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_17
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 4328
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d169149d84c3fb746b474e0b3b51b493
+      internalID: 2109594492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_18
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 4326
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cf865d6d49be0468bb2ac2d1a16e32
+      internalID: 164368022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_19
+      rect:
+        serializedVersion: 2
+        x: 2707
+        y: 4328
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e353046bcd3fef4a8c73747e9053fcf
+      internalID: -1416735424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_20
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 4329
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3672f6449123dce4b98d7f21928c1008
+      internalID: 582138448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_21
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3845
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2ca48b7317398419e897376cd6fa0c
+      internalID: -1515370805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_22
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 3841
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6e4aa9778678b42ba98b1429b95ae8
+      internalID: 1083097633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_23
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 3833
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ea3be60067ec3458bdffada9b0baab
+      internalID: 1003801427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_24
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 3848
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2472449fec5abb146928bae4ae16de59
+      internalID: 1292950272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_25
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 3843
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bab271ac406e640812c5d6ceb00cf2
+      internalID: -1979699375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_26
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 3846
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd599dc36012da4d8b7c16d9b20d3e8
+      internalID: -374816926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_27
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 3850
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfe29a5dae33f143b6f44403fbcac2b
+      internalID: 1278850198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3363
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc5dff3f0eada74dbdc8e0bc09b86b9
+      internalID: -1039919120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_29
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 3358
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b52b94ba7a9e640839e69bb0a9c042
+      internalID: -1641413028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_30
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 3351
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a240adca4b1b1a4c88449868a738a25
+      internalID: 234389290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_31
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 3369
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8ec4d9e071d4b4bbb25c6f3b27d90e
+      internalID: -1673040055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_32
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 3361
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f153fe24a64df4799df9faad5f23af
+      internalID: -1358329607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_33
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 3365
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af21008dac4a9664f9fd210e5be612c9
+      internalID: -1981370386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_34
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 3370
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0b8ccf7ab1d834e923c737408b2425
+      internalID: 1712963013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_35
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2884
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd87d27cbf76c54abbe7b0763756f10
+      internalID: -1912173869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_36
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 2878
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553a4b2ee9e6a094292fa1d630679f6b
+      internalID: 327536734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_37
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2869
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59eefb674ff68b842b50b4b5b6b2e475
+      internalID: 1545937052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_38
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 2890
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8c38f73eaefca4388899b87364f444
+      internalID: 144597067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_39
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 2880
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547bfe050041fe048bbcb50b57c8d1b1
+      internalID: -52654524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_40
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 2885
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a47d761947812b4bb9773144e608224
+      internalID: 697416435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_41
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 2887
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da02a83544234304ba7b5c58bf1aa360
+      internalID: -1052265631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_42
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2403
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2135a5d7e7fbe4cbfde1a427e5e83d
+      internalID: 1447177866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_43
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 2397
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92424ad0427badc48bf1c5ab06e477cf
+      internalID: -113338143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_44
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2388
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2f02c544a9cf344b393280394d9858
+      internalID: 2060693254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_45
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 2411
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58851a5f96099ad4aaf4719d91ffde30
+      internalID: -1052488413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_46
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 2401
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92b071fd65f7d94584c08a9a6553b0c
+      internalID: -1137213868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_47
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 2405
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cd65782ac5e5142844f1affab8c763
+      internalID: -1485573340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_48
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 2405
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c659f6290a075f45bc0d5068052577a
+      internalID: 427048783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_49
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1923
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7a355088cfd5b4ca98e9ca22278b1b
+      internalID: 1502462211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_50
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1916
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5842f35732f1b2944a884b9dd953d4da
+      internalID: 549018715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_51
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1907
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abfde109f082aa45aa7deaabd82d598
+      internalID: -1192028671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_52
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1932
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f9e2e0bac62e043992f6a297b80bc9
+      internalID: -876084852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_53
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 1921
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e9bde88ded4174faa0fba8af39c6d0
+      internalID: 2111290522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_54
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 1924
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5ddccc8bed45e48bb84f70758aa3bc
+      internalID: 479871957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_55
+      rect:
+        serializedVersion: 2
+        x: 3227
+        y: 1924
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf8ef1009698314b8d534e680fa6221
+      internalID: -664495043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_56
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1441
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a648a09f974efd49b283941fccf91d8
+      internalID: 1306132098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_57
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1435
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6b8131a4d81b5429168c1901661b10
+      internalID: 1539494668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_58
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 1428
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1be0a68516141449f8452998a12fb9
+      internalID: -2101900117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_59
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1452
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64db733abc2733a4e8135526da87ba39
+      internalID: -1641119634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_60
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 1440
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09c138f6d5dcc8419456b50f71e58a9
+      internalID: -1168480446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_61
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 1446
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a060b432e4511414bb936a0cdac9a52f
+      internalID: 1477804950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_62
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 1446
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7dfd86a2f63195459aa6be1ed39dca3
+      internalID: -705499005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_63
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 957
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0492f94b07c42054bbfde84756265f38
+      internalID: 962450858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_64
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 955
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8c3b90daaa35942828db5ffb7ca81b
+      internalID: -928745302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_65
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 946
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7eeee435cb2dc48b60b7e774d39e63
+      internalID: 1877461047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_66
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 973
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c57c360ae1bed488ba09c664e80bfa
+      internalID: 741350106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_67
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 961
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca34722d3fc1854ca85fecddac6c2e1
+      internalID: 1897949492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_68
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 965
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a4c90c51e9ed74eb4eec994780f7f8
+      internalID: 238476412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_69
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 964
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd3efa7542d7994d9da1ea57d4bc680
+      internalID: 221713035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_70
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 475
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fbc3200eb15e34e8bf7f5a99c57b86
+      internalID: -1251689002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_71
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 477
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a082fb173a3a0243a7989e70e39fa30
+      internalID: -628327032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_72
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 465
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d9d23762074c141aa984cfc1ac0b62
+      internalID: -880765433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_73
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 490
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5759eaf6a7cdd48ac09f683faddfe8
+      internalID: -2124641663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_74
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 481
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f545c8dee9bfb48a3d4d668452dd69
+      internalID: 257570043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_75
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 486
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374f397d22b153848a9d7f30af9aa1e2
+      internalID: 505315967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_76
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 482
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c786b628576bc454ea11dce578baa414
+      internalID: -367561144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_77
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbc96ecef72a9d4597324bee827cb23
+      internalID: 1360206122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_78
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 0
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d703f493623800d4488f3eb754ef73aa
+      internalID: 348485198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_79
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 0
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a58b2b7e2d2df4296968b01ff65309
+      internalID: 1940178643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_80
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 14
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd69729d84e83041859fec15822c98c
+      internalID: 2126362450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield purple_81
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 2
+        width: 440
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c13c3e17f56c8e4bb85381b6717fbf4
+      internalID: 1918662000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Shield purple_60: -1733548829
+      Shield purple_21: -645076522
+      Shield purple_23: -1049165385
+      Shield purple_27: 1418175134
+      Shield purple_39: -1758440191
+      Shield purple_11: 2051870287
+      Shield purple_28: 1816073361
+      Shield purple_32: -587124265
+      Shield purple_26: -866642090
+      Shield purple_37: 1721914432
+      Shield purple_10: -267986158
+      Shield purple_25: -1683481743
+      Shield purple_53: 2070480150
+      Shield purple_54: 107855622
+      Shield purple_43: -968971476
+      Shield purple_41: 1538102697
+      Shield purple_46: 2031584847
+      Shield purple_34: 179097699
+      Shield purple_67: 1212344677
+      Shield purple_59: -1031891501
+      Shield purple_15: -1550746001
+      Shield purple_36: -263052657
+      Shield purple_8: -770397247
+      Shield purple_5: -1196742261
+      Shield purple_70: 999012016
+      Shield purple_4: 280329799
+      Shield purple_12: 1207543008
+      Shield purple_50: -2111089554
+      Shield purple_33: -1497882467
+      Shield purple_51: -451033287
+      Shield purple_17: -726013078
+      Shield purple_13: -673351140
+      Shield purple_29: -1492890273
+      Shield purple_55: 1430303568
+      Shield purple_16: -1583525770
+      Shield purple_31: 504827403
+      Shield purple_20: -1598040012
+      Shield purple_73: -1722155323
+      Shield purple_42: 113040019
+      Shield purple_74: 1434976880
+      Shield purple_79: 730432097
+      Shield purple_3: -700358654
+      Shield purple_7: 706716073
+      Shield purple_45: 1905817207
+      Shield purple_24: 2066505805
+      Shield purple_52: 2121538831
+      Shield purple_1: 826429607
+      Shield purple_49: 1085635337
+      Shield purple_57: -330151136
+      Shield purple_22: -2114598211
+      Shield purple_47: -1591566901
+      Shield purple_38: 728209660
+      Shield purple_78: -316931394
+      Shield purple_63: 234305743
+      Shield purple_14: 88171270
+      Shield purple_65: -302056776
+      Shield purple_6: -1722223361
+      Shield purple_9: 433537075
+      Shield purple_35: -1049484357
+      Shield purple_18: -1181462584
+      Shield purple_44: 699954304
+      Shield purple_19: 1863317411
+      Shield purple_80: 1188260943
+      Shield purple_0: -918183828
+      Shield purple_64: -2101205980
+      Shield purple_62: 376357121
+      Shield purple_69: -287812640
+      Shield purple_68: 307528435
+      Shield purple_48: 1700540841
+      Shield purple_75: 40443982
+      Shield purple_56: 932866816
+      Shield purple_61: -1704912123
+      Shield purple_30: -894484825
+      Shield purple_40: 655376883
+      Shield purple_71: 589477760
+      Shield purple_76: -1622986660
+      Shield purple_58: 1260188901
+      Shield purple_72: -174069523
+      Shield purple_2: 777821024
+      Shield purple_66: 1852458901
+      Shield purple_77: 529629652
+      Shield purple_81: -1358108697
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

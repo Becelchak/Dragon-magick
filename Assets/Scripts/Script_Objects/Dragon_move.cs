@@ -14,6 +14,7 @@ public class Dragon_move : MonoBehaviour
     [SerializeField] private GameObject Right_point;
     [SerializeField] private GameObject Left_point;
     [SerializeField] private GameObject Top_point;
+    [SerializeField] private GameObject Death_point;
 
     [SerializeField] private float Speed = 1;
 
@@ -33,6 +34,9 @@ public class Dragon_move : MonoBehaviour
     [SerializeField] private Animator animator;
     private GameObject target_for_attack;
 
+    [Header("Player and village status")] 
+    [SerializeField] private GameObject Player;
+
 
     void Start()
     {
@@ -42,6 +46,20 @@ public class Dragon_move : MonoBehaviour
 
     void Update()
     {
+        // if Dead -> stop all end move to deatg point
+        if (GetComponent<Dragon_HealPoint>().Dead())
+        {
+            GetComponent<SpriteRenderer>().sortingOrder = 5;
+            if (timer < 0.3)
+                timer += Time.deltaTime;
+            if (timer > 0.3)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, Death_point.transform.position, Speed);
+                timer = 0;
+            }
+            animator.SetTrigger("Dead");
+            return;
+        }
         // Check direction rotate dragon
         transform.rotation = turn switch
         {
@@ -100,7 +118,7 @@ public class Dragon_move : MonoBehaviour
             }
             if(attack_rnd is 4 or 2)
                 Attack();
-            Debug.Log($"attack {attack_rnd}");
+            //Debug.Log($"attack {attack_rnd}");
         }
         // IF attack - don't move
         if (is_attack)
@@ -180,7 +198,7 @@ public class Dragon_move : MonoBehaviour
             var fireball = new GameObject($"Fireball on {target_name}");
             fireball.transform.position = transform.position;
             fireball.AddComponent<Fireball>().Initialize(target_for_attack);
-            Debug.Log("Create fire");
+            //Debug.Log("Create fire");
         }
     }
 
@@ -196,7 +214,7 @@ public class Dragon_move : MonoBehaviour
             animator.SetTrigger("Fly");
             attack_timer = 0;
             coldown_timer = 0;
-            Debug.Log("End attack");
+            //Debug.Log("End attack");
         }
     }
 
@@ -204,11 +222,15 @@ public class Dragon_move : MonoBehaviour
     {
         var target_rnd = Random.Range(1, 6);
         var target_name = "Player";
-        if (target_rnd < 6)
+        if (Player.GetComponent<Village_heal_point>().VillageStatus()) 
+            return target_name;
+        else if (target_rnd < 6)
         {
             target_name = $"Village_building {target_rnd}";
             target_for_attack = GameObject.Find(target_name);
-           
+            if (target_for_attack.GetComponent<Building>().Getstatus())
+                FindAttackTarget();
+
         }
         return target_name;
     }

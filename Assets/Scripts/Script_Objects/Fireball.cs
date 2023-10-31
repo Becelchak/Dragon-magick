@@ -64,12 +64,29 @@ public class Fireball : MonoBehaviour
 
     void OnTriggerEnter(Collider collision)
     {
-        isExplosion = true;
-        collision.GetComponent<Building_logick>().Destroy();
+        // If fireball strike building -> destroy building
+        if (collision.name.Contains("Village"))
+        {
+            isExplosion = true;
+            collision.GetComponent<Building>().Destroy();
+        }
+        // If player catch fireball -> up his mana
+        else if (collision.name.Contains("Magic_shield"))
+        {
+            isExplosion = true;
+            var player = GameObject.Find("Player");
+            player.GetComponent<Player_magic>().UpMana(0.2f);
+            Debug.Log("+2!~");
+        }
     }
     void OnTriggerStay(Collider collision)
     {
-        isExplosion = true;
-        collision.GetComponent<Building_logick>().Destroy();
+        // If fireball strike building -> destroy building
+        if (collision.name.Contains("Village"))
+        {
+            isExplosion = true;
+            collision.GetComponent<Building>().Destroy();
+        }
+            
     }
 }
