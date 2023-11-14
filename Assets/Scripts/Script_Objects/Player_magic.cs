@@ -7,16 +7,30 @@ public class Player_magic : MonoBehaviour
 {
     [SerializeField] private Image Mana_Bar;
     [SerializeField] private GameObject Skills;
+
+    [SerializeField] private GameObject secondSkill;
+    private float ThirdSkillLifetTime = 2f;
+    private float timer = 0;
+    private bool isThirdSkillUse = false;
+
     private Animator animator;
     private float mana = 1;
     private int skillNow = 0;
     void Start()
     {
         animator = GetComponent<Animator>();
+        timer = ThirdSkillLifetTime;
     }
 
     void Update()
     {
+        if (isThirdSkillUse)
+            timer -= Time.deltaTime;
+        if (timer <= 0)
+        {
+            secondSkill.SetActive(false);
+            timer = ThirdSkillLifetTime;
+        }
         string num;
         if (Input.anyKeyDown)
         {
@@ -53,7 +67,7 @@ public class Player_magic : MonoBehaviour
                 case 1:
                     if(mana >= 0.18f)
                     {
-                        //mana -= 0.18f;
+                        mana -= 0.18f;
                         animator.SetTrigger("Use_skill1");
 
                         var MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -66,8 +80,15 @@ public class Player_magic : MonoBehaviour
                 case 2:
                     if (mana >= 0.38f)
                     {
-                        mana -= 0.18f;
+                        mana -= 0.38f;
                         animator.SetTrigger("Use_skill2");
+
+                        var MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        MousePos.z += Camera.main.nearClipPlane;
+                        var arrow = new GameObject("Magic arrow");
+                        arrow.transform.position = transform.position;
+                        arrow.AddComponent<Magic_arrow>().Initialize(MousePos, damage: 40, speed: 0.02f);
+
                     }
                     break;
                 case 3:
@@ -76,11 +97,8 @@ public class Player_magic : MonoBehaviour
                         //mana -= 1;
                         animator.SetTrigger("Use_skill3");
 
-                        var MousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                        MousePos.z += Camera.main.nearClipPlane;
-                        var arrow = new GameObject("Magic arrow");
-                        arrow.transform.position = transform.position;
-                        arrow.AddComponent<Magic_arrow>().Initialize(MousePos, damage:40, speed:0.02f);
+                        secondSkill.SetActive(true);
+                        isThirdSkillUse = true;
                     }
                     break;
                 default:

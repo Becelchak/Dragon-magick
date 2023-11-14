@@ -4,25 +4,30 @@ using UnityEngine;
 
 public class Dragon_HealPoint : MonoBehaviour
 {
-    [SerializeField] private double Healt_Point = 100;
+    [SerializeField] private double HealtPoint = 100;
     private bool isDead = false;
+    private CanvasGroup GameEndUI;
     void Start()
     {
-        
+        GameEndUI = GameObject.Find("Win Menu").GetComponent<CanvasGroup>();
     }
 
     void Update()
     {
-        if(Healt_Point == 0)
+        if(HealtPoint == 0)
             isDead = true;
+        if (!isDead) return;
+        GameEndUI.alpha = 1;
+        GameEndUI.blocksRaycasts = true;
+        GameEndUI.interactable = true;
     }
 
     public void GetDamage(double damage)
     {
-        Healt_Point -= damage;
-        if(Healt_Point < 0)
-            Healt_Point = 0;
-        Debug.Log($"Now healt_point dragon = {Healt_Point}");
+        HealtPoint -= damage;
+        if(HealtPoint < 0)
+            HealtPoint = 0;
+        Debug.Log($"Now healt_point dragon = {HealtPoint}");
     }
 
     public bool Dead()

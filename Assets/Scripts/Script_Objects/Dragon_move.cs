@@ -10,37 +10,40 @@ using static UnityEngine.GraphicsBuffer;
 public class Dragon_move : MonoBehaviour
 {
     [Header("Moving")]
-    [SerializeField] private GameObject End_point_for_start;
-    [SerializeField] private GameObject Right_point;
-    [SerializeField] private GameObject Left_point;
-    [SerializeField] private GameObject Top_point;
-    [SerializeField] private GameObject Death_point;
+    [SerializeField] private GameObject endPointStart;
+    [SerializeField] private GameObject rightPoint;
+    [SerializeField] private GameObject leftPoint;
+    [SerializeField] private GameObject topPoint;
+    [SerializeField] private GameObject deathPoint;
 
-    [SerializeField] private float Speed = 1;
+    [SerializeField] private float speed = 1;
 
-    private bool is_came_in_village = false;
-    private bool is_attack_fly = false;
+    private bool isCameInVillage = false;
+    private bool isAttackFly = false;
     private float timer = 0;
     private int direction = 0;
     private string turn = "Left";
 
     [Header("Attack")]
-    [SerializeField] private float Attack_time = 3;
-    private float attack_rnd = 0;
-    private float attack_timer = 0;
-    private bool is_attack = false;
-    private float coldown_attack = 5f;
-    private float coldown_timer = 0;
+    [SerializeField] private float attackTime = 3;
+    private float attackRandom = 0;
+    private float attackTimer = 0;
+    private bool isAttack = false;
+    private float coldownAttack = 5f;
+    private float coldownTimer = 0;
     [SerializeField] private Animator animator;
-    private GameObject target_for_attack;
+    private GameObject targetForAttack;
 
-    [Header("Player and village status")] 
-    [SerializeField] private GameObject Player;
+    [Header("player and village status")] 
+    [SerializeField] private GameObject player;
+
+    private Player_shield shieldCLass;
 
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        shieldCLass = player.GetComponent<Player_shield>();
         Random.InitState(25696);
     }
 
@@ -54,7 +57,7 @@ public class Dragon_move : MonoBehaviour
                 timer += Time.deltaTime;
             if (timer > 0.3)
             {
-                transform.position = Vector3.MoveTowards(transform.position, Death_point.transform.position, Speed);
+                transform.position = Vector3.MoveTowards(transform.position, deathPoint.transform.position, speed);
                 timer = 0;
             }
             animator.SetTrigger("Dead");
@@ -68,26 +71,26 @@ public class Dragon_move : MonoBehaviour
             _ => transform.rotation
         };
         // When dragon only start fly -> he fly to the start point
-        if (!is_came_in_village)
+        if (!isCameInVillage)
         {
             if (timer < 0.3)
                 timer += Time.deltaTime;
             if (timer > 0.3)
             {
-                transform.position = Vector3.MoveTowards(transform.position, End_point_for_start.transform.position, Speed);
+                transform.position = Vector3.MoveTowards(transform.position, endPointStart.transform.position, speed);
                 timer = 0;
             }
         }
 
         // When dragon came to start point -> activate attack fly with other logic 
-        if (transform.position == End_point_for_start.transform.position && !is_came_in_village)
+        if (transform.position == endPointStart.transform.position && !isCameInVillage)
         {
-            is_came_in_village = true;
-            is_attack_fly = true;
+            isCameInVillage = true;
+            isAttackFly = true;
             Debug.Log("Start combat");
         }
 
-        if (is_attack_fly)
+        if (isAttackFly)
             Attack_moving();
 
     }
@@ -101,27 +104,27 @@ public class Dragon_move : MonoBehaviour
         var mod_speed = Random.Range(0.1f, 3.5f);
 
         //Attack module, when timers and random numbers determine the behavior of the dragon
-        if (!is_attack)
+        if (!isAttack)
         {
-            coldown_timer += Time.deltaTime;
-            //Debug.Log($"cooldown {coldown_timer}");
+            coldownTimer += Time.deltaTime;
+            //Debug.Log($"cooldown {coldownTimer}");
 
         }
         // If attack - wait some second
-        if (coldown_timer >= coldown_attack)
+        if (coldownTimer >= coldownAttack)
         {
             // Random time for attack
-            if (!is_attack)
+            if (!isAttack)
             {
-                attack_rnd = Random.Range(2, 2);
-                coldown_timer = 0;
+                attackRandom = Random.Range(2, 2);
+                coldownTimer = 0;
             }
-            if(attack_rnd is 4 or 2)
+            if(attackRandom is 4 or 2)
                 Attack();
-            //Debug.Log($"attack {attack_rnd}");
+            //Debug.Log($"attack {attackRandom}");
         }
         // IF attack - don't move
-        if (is_attack)
+        if (isAttack)
         {
             AttackEnding();
             return;
@@ -136,12 +139,12 @@ public class Dragon_move : MonoBehaviour
                     timer += Time.deltaTime;
                 if (timer > 0.3)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, Right_point.transform.position,
-                        Speed * direction);
+                    transform.position = Vector3.MoveTowards(transform.position, rightPoint.transform.position,
+                        speed * direction);
                     timer = 0;
                 }
 
-                if (transform.position == Right_point.transform.position)
+                if (transform.position == rightPoint.transform.position)
                 {
                     direction = Random.Range(2, 3);
                     Debug.Log("End right");
@@ -154,12 +157,12 @@ public class Dragon_move : MonoBehaviour
                     timer += Time.deltaTime;
                 if (timer > 0.3)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, Left_point.transform.position,
-                        Speed * direction);
+                    transform.position = Vector3.MoveTowards(transform.position, leftPoint.transform.position,
+                        speed * direction);
                     timer = 0;
                 }
 
-                if (transform.position == Left_point.transform.position)
+                if (transform.position == leftPoint.transform.position)
                 {
                     direction = 3;
                     turn = "Right";
@@ -172,12 +175,12 @@ public class Dragon_move : MonoBehaviour
                     timer += Time.deltaTime;
                 if (timer > 0.3)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, Top_point.transform.position,
-                        Speed * direction);
+                    transform.position = Vector3.MoveTowards(transform.position, topPoint.transform.position,
+                        speed * direction);
                     timer = 0;
                 }
 
-                if (transform.position == Top_point.transform.position)
+                if (transform.position == topPoint.transform.position)
                 {
                     direction = Random.Range(1, 3);
                     Debug.Log("End Top");
@@ -189,15 +192,15 @@ public class Dragon_move : MonoBehaviour
     private void Attack()
     {
         // Start animation attack
-        if (!is_attack)
+        if (!isAttack)
         {
-            is_attack = true;
+            isAttack = true;
             animator.SetTrigger("Attack");
 
             var target_name = FindAttackTarget();
             var fireball = new GameObject($"Fireball on {target_name}");
             fireball.transform.position = transform.position;
-            fireball.AddComponent<Fireball>().Initialize(target_for_attack);
+            fireball.AddComponent<Fireball>().Initialize(targetForAttack);
             //Debug.Log("Create fire");
         }
     }
@@ -205,15 +208,15 @@ public class Dragon_move : MonoBehaviour
     private void AttackEnding()
     {
         // Count time attack animation (TODO something better)
-        if (is_attack)
-            attack_timer += Time.deltaTime;
+        if (isAttack)
+            attackTimer += Time.deltaTime;
         // End animation attack
-        if (attack_timer >= Attack_time && is_attack)
+        if (attackTimer >= attackTime && isAttack)
         {
-            is_attack = false;
+            isAttack = false;
             animator.SetTrigger("Fly");
-            attack_timer = 0;
-            coldown_timer = 0;
+            attackTimer = 0;
+            coldownTimer = 0;
             //Debug.Log("End attack");
         }
     }
@@ -221,17 +224,37 @@ public class Dragon_move : MonoBehaviour
     private string FindAttackTarget()
     {
         var target_rnd = Random.Range(1, 6);
-        var target_name = "Player";
-        if (Player.GetComponent<Village_heal_point>().VillageStatus()) 
+        var target_name = "player";
+        if (player.GetComponent<Village_heal_point>().VillageStatus()) 
             return target_name;
         else if (target_rnd < 6)
         {
             target_name = $"Village_building {target_rnd}";
-            target_for_attack = GameObject.Find(target_name);
-            if (target_for_attack.GetComponent<Building>().Getstatus())
+            targetForAttack = GameObject.Find(target_name);
+            if (targetForAttack.GetComponent<Building>().Getstatus())
                 FindAttackTarget();
 
         }
         return target_name;
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("ENTER");
+        if (collision.gameObject.name != "Magic_shield") return;
+        shieldCLass.Shield.SetActive(false);
+        shieldCLass.shieldActive = false;
+        animator.SetTrigger("Idle");
+        shieldCLass.timer = 0;
+    }
+
+    //void OnCollisionStay(Collision collision)
+    //{
+    //    Debug.Log("STAY");
+    //    if (collision.gameObject.name != "Dragon") return;
+    //    Shield.SetActive(false);
+    //    shieldActive = false;
+    //    animator.SetTrigger("Idle");
+    //    timer = Life_time;
+    //}
 }

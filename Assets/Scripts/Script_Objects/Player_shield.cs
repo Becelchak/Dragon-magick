@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Player_shield : MonoBehaviour
 {
-    [SerializeField] private GameObject Shield;
-    [SerializeField] private float Life_time = 1.5f;
-    private float timer = 0;
+    [SerializeField] public GameObject Shield;
+    [SerializeField] public float Life_time = 1.5f;
+    public float timer = 0;
     private Animator animator;
-    private bool shieldActive = false;
+    public bool shieldActive = false;
 
     void Start()
     {
@@ -34,7 +34,7 @@ public class Player_shield : MonoBehaviour
         {
             if (!shieldActive)
             {
-                Debug.Log($"{shieldActive}");
+                //Debug.Log($"{shieldActive}");
                 animator.SetTrigger("Shield");
             }
 
