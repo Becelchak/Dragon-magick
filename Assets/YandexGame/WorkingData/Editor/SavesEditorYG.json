@@ -1,0 +1,38 @@
+{
+    "idSave": 38,
+    "isFirstSession": false,
+    "language": "ru",
+    "promptDone": false,
+    "skin": 1,
+    "gold": 418,
+    "NowCharacter": {
+        "name": "Монахиня Мавра",
+        "sprite": {
+            "instanceID": 25574
+        },
+        "animator": {
+            "instanceID": 25478
+        },
+        "skill1": {
+            "instanceID": 25576
+        },
+        "skill2": {
+            "instanceID": 25578
+        },
+        "skill3": {
+            "instanceID": 25580
+        },
+        "SkillLevel": [
+            1,
+            1,
+            1,
+            2,
+            1
+        ],
+        "SkillName": [
+            "Духи света",
+            "Солнечный меч",
+            "Гнев свыше"
+        ]
+    }
+}

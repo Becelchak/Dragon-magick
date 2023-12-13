@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2779eb9796a547d47b9bb19495eb0a00, type: 3}
+  m_Name: New Character Database
+  m_EditorClassIdentifier: 
+  characterList:
+  - name: "\u0421\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0439
+      \u043C\u0430\u0433 \u041B\u0435\u0433\u0440\u0430\u043D"
+    sprite: {fileID: -20407340, guid: 542f1af8428681b4d9770194ec05dad9, type: 3}
+    animator: {fileID: 9100000, guid: af4aca3b24820084baee50aa2659075a, type: 2}
+    skill1: {fileID: 21300000, guid: 04aa6d588031cca46a8bd5e5e6582140, type: 3}
+    skill2: {fileID: 21300000, guid: e1a91c592705b8d458b7bc8a5b789f0c, type: 3}
+    skill3: {fileID: 21300000, guid: 11b244da10d941340a9f3c6838e55716, type: 3}
+    SkillLevel: 0100000001000000010000000100000001000000
+    SkillName:
+    - "\u041C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0441\u0442\u0440\u0435\u043B\u0430"
+    - "\u0421\u0433\u0443\u0441\u0442\u043E\u043A \u0430\u043D\u0442\u0438\u043C\u0430\u0442\u0435\u0440\u0438\u0438"
+    - "\u0417\u0432\u0435\u0437\u0434\u043D\u044B\u0439 \u0434\u043E\u0436\u0434\u044C"
+  - name: "\u041C\u043E\u043D\u0430\u0445\u0438\u043D\u044F \u041C\u0430\u0432\u0440\u0430"
+    sprite: {fileID: -1173404737, guid: 57b0149f225b5cb43be1bc13a5e888ee, type: 3}
+    animator: {fileID: 9100000, guid: ee3cba5d8f8bcfe438d542dae7178e45, type: 2}
+    skill1: {fileID: 21300000, guid: 1b497534119c3594b9debd153c826819, type: 3}
+    skill2: {fileID: 21300000, guid: c67cb5ecf78926749a4848e6546d330c, type: 3}
+    skill3: {fileID: 21300000, guid: 48aab667bb174e94b94edcd6a1e41c96, type: 3}
+    SkillLevel: 0100000001000000010000000100000001000000
+    SkillName:
+    - "\u0414\u0443\u0445\u0438 \u0441\u0432\u0435\u0442\u0430"
+    - "\u0421\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0439 \u043C\u0435\u0447"
+    - "\u0413\u043D\u0435\u0432 \u0441\u0432\u044B\u0448\u0435"
+  - name: "\u041F\u0438\u0440\u043E\u043C\u0430\u043D\u0442 \u041C\u0430\u0433\u043C\u0430\u0449\u044E\u043F"
+    sprite: {fileID: 6924111, guid: 1fabea939b9b6c943a6870e3b1bb5ccd, type: 3}
+    animator: {fileID: 9100000, guid: 50cc3b5a880e9c946b6d0a9ce7d38dc8, type: 2}
+    skill1: {fileID: 21300000, guid: 2b9c59422eac9d941996e9b1c8e88cfc, type: 3}
+    skill2: {fileID: 21300000, guid: 487ca9c97a2121c49b97711625081a3b, type: 3}
+    skill3: {fileID: 21300000, guid: 3434169aea05eeb4185f2fa72c80bf31, type: 3}
+    SkillLevel: 0100000001000000010000000100000001000000
+    SkillName:
+    - "\u041E\u0433\u043D\u0435\u043D\u043D\u044B\u0439 \u043C\u0435\u0447"
+    - "\u0428\u0430\u0440 \u043F\u043B\u0430\u043C\u0435\u043D\u0438"
+    - "\u0412\u0441\u043F\u043B\u0435\u0441\u043A \u043C\u0430\u0433\u043C\u044B"
