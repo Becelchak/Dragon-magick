@@ -16,7 +16,10 @@ public class Dragon_HealPoint : MonoBehaviour
     [SerializeField] 
     private AudioSource mainAudioSource;
     [SerializeField] 
-    private AudioSource hoverAudioSource;
+    private AudioSource playerAudioSource;
+
+    [SerializeField] 
+    private AudioSource dragonAudioSource;
     private AudioClip mainClip;
     private bool isDead = false;
 
@@ -31,6 +34,7 @@ public class Dragon_HealPoint : MonoBehaviour
     private int goldReward;
     void Start()
     {
+        healtPoint = YandexGame.savesData.NowDragon.health;
         percentHealth = healtPoint / 100;
 
         GameEndUI = GameObject.Find("Win Menu");
@@ -39,32 +43,68 @@ public class Dragon_HealPoint : MonoBehaviour
 
         healthHover = healthBar.transform.GetChild(0).GetComponent<Image>();
         healthMain = healthBar.transform.GetChild(1).GetComponent<Image>();
+
+        dragonAudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
         healthMain.fillAmount = healtPoint / (percentHealth * 100);
-        if (Math.Abs(healthHover.fillAmount - healthMain.fillAmount) > 0.0001f)
+        if (healthHover.fillAmount != healthMain.fillAmount)
         {
             healthTimer -= Time.deltaTime;
             if (healthTimer <= 0)
             {
+                Debug.Log($"healthHover = {healthHover.fillAmount}");
+                Debug.Log($"healthMain = {healthMain.fillAmount}");
                 healthTimer = 1.3f;
                 healthHover.fillAmount = healthMain.fillAmount;
+
             }
         }
         if (healtPoint == 0)
             isDead = true;
         if (!isDead) return;
+
         if(goldReward != 0) return;
-        YandexGame.ResetSaveProgress();
+        GetTreasure();
+    }
+
+    public void GetDamage(float damage)
+    {
+        healtPoint -= damage;
+        if (healtPoint - damage <= 0)
+        {
+            var death = Resources.Load<AudioClip>("Sound/dragon_death");
+            dragonAudioSource.PlayOneShot(death);
+            GetComponents<AudioSource>()[1].Stop();
+        }
+        else
+        {
+            var clipHit = Resources.Load<AudioClip>("Sound/dragon_hit");
+            dragonAudioSource.PlayOneShot(clipHit);
+        }
+
+        if (healtPoint <= 0)
+            healtPoint = 0;
+        Debug.Log($"Now healt_point dragon = {healtPoint}");
+    }
+
+    public bool Dead()
+    {
+        return isDead;
+    }
+
+    private void GetTreasure()
+    {
         var aplloudice = Resources.Load<AudioClip>("Music/Win_applause");
-        hoverAudioSource.PlayOneShot(aplloudice);
+        playerAudioSource.PlayOneShot(aplloudice);
         mainAudioSource.clip = mainClip;
         mainAudioSource.Play();
 
         var random = new Random();
-        goldReward = random.Next(10, 30);
+        var modifire = YandexGame.savesData.NowDragon.priceModifire;
+        goldReward = random.Next(10 * modifire, 30 * modifire);
         YandexGame.savesData.gold += goldReward;
 
         GameEndUICanvas.alpha = 1;
@@ -75,18 +115,5 @@ public class Dragon_HealPoint : MonoBehaviour
         countGold.text = goldReward.ToString();
 
         YandexGame.SaveProgress();
-    }
-
-    public void GetDamage(float damage)
-    {
-        healtPoint -= damage;
-        if(healtPoint < 0)
-            healtPoint = 0;
-        Debug.Log($"Now healt_point dragon = {healtPoint}");
-    }
-
-    public bool Dead()
-    {
-        return isDead;
     }
 }

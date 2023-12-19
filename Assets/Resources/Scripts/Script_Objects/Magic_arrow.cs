@@ -33,6 +33,7 @@ public class Magic_arrow : MonoBehaviour
 
     void Start()
     {
+
         this.AddComponent<BoxCollider>();
         this.AddComponent<SpriteRenderer>();
         animator = GameObject.Find("Primal magic arrow").GetComponent<Animator>();
@@ -68,8 +69,10 @@ public class Magic_arrow : MonoBehaviour
                 GetComponent<Animator>().SetTrigger("Magma");
                 box_collider.size = new Vector3(0.55f, 0.2f, 50);
                 break;
+            default:
+                GetComponent<Animator>().SetTrigger("Arrow1");
+                break;
         }
-
 
     }
 

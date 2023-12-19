@@ -1,0 +1,978 @@
+fileFormatVersion: 2
+guid: efc3216db7ff67642b59f75cd7f160cb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Azure Dragon_17_fly
+      rect:
+        serializedVersion: 2
+        x: 2054
+        y: 1281
+        width: 152
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac00e6014d124e144a570e7f52ccfd6b
+      internalID: -1222449449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_18_fly
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 1285
+        width: 173
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b502774c19fc1ac4eafbe6b4638369cd
+      internalID: 1088256142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_19_fly
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1282
+        width: 174
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33941b37b0d6044aa07e1e65ab67160
+      internalID: 23367843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_20_fly
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1297
+        width: 180
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fc31a396a19ef42ae786bf741e0adb
+      internalID: 914430956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_21_fly
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1305
+        width: 201
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b8a0276e012574b91444214d8d02bb
+      internalID: 971197870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_22_fly
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1321
+        width: 200
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcad8d9e0a164240af560bb0503fde4
+      internalID: -539207744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_23_fly
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1308
+        width: 204
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f942febb5319fdf42a802411ea850070
+      internalID: 1488919794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_24_fly
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1283
+        width: 200
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff663550847a64683e781f510e0edc
+      internalID: 2096380427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_25_fly
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1301
+        width: 198
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20b58d0f798e2144ba1b9505a4dbacf
+      internalID: -850693496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_26_fly
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1282
+        width: 156
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f30d68728b4094b920c22d2b003adf
+      internalID: 543339275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_27_fly
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1282
+        width: 129
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4be990c0d0e5649b8b61bab540e862
+      internalID: -1052592729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_90
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 768
+        width: 111
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea0b3d703585d54b91e3be8d574f8bb
+      internalID: -1242786984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_91
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 772
+        width: 134
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bd33a9bdcac534a82e9eb61449820c
+      internalID: -1098933959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_94
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 756
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a161f470a750f98409af046f5b9d25e9
+      internalID: -1795266803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_95
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 715
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2592cf9eeb399459d90ee3b3d5b299
+      internalID: -950154906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_97
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 669
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b36b41862f1dc4ea19fd9d9755448a
+      internalID: -388327433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_98
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 674
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317c2078bb3c1ff488ac32d0ac36f09a
+      internalID: -1671092722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_131
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 259
+        width: 242
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611953c575c78bf428ffdb8927e941f0
+      internalID: 701319353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_132
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 257
+        width: 255
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eaa98ac28757f49ab42c217c5d1e4e
+      internalID: 1555302706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_133
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 251
+        width: 201
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497e03d9512dc494cad32449d3a38c3b
+      internalID: 788357120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_135_death
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 260
+        width: 154
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae7fbde009c81d4cb777662b1615c9e
+      internalID: 1415222116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_136_death
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 264
+        width: 176
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c176df787ac003549a6e4dd9cfdd8f9f
+      internalID: -985887278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_137_death
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 262
+        width: 159
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e1540aa52e27844b715e7b1a5bec0e
+      internalID: 1489387117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_139
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 257
+        width: 244
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c22ddd50a2166b4082a6d00e9e37ec9
+      internalID: -772308777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_144_death
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 263
+        width: 118
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4abc8eaefce054f9f4ac18ffcdaf13
+      internalID: 599539124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_155_death
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 266
+        width: 88
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866f7ad2afceeed4f9bc7c6dc920274d
+      internalID: 1724614029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_156_death
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 268
+        width: 90
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8133df5076eaceb4ca7d3483dcbeee78
+      internalID: 725436094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_157_attack
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 32
+        width: 186
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036a3b29b69a06d4eade706da4a07091
+      internalID: 1431344247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_158_attack
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 31
+        width: 208
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e2316d06bac1e428115749d89da3fc
+      internalID: -715643285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_159_attack
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 37
+        width: 210
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591dd93a7e6083a4f9d6346f8499ef6f
+      internalID: -493054043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Azure Dragon_161_attack
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 49
+        width: 199
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed972cecee52e9644afda0d5bc6639f0
+      internalID: 1943858679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Azure Dragon_15: -1637226995
+      Azure Dragon_12: -1587036763
+      Azure Dragon_16: 1152845511
+      Azure Dragon_81: 2072611494
+      Azure Dragon_104: 1944026517
+      Azure Dragon_45: 1288014398
+      Azure Dragon_35: 1089750087
+      Azure Dragon_41: 2116925028
+      Azure Dragon_22_fly: 1488919794
+      Azure Dragon_106: -939664759
+      Azure Dragon_93: -1795266803
+      Azure Dragon_13: -1643103341
+      Azure Dragon_147: 238188106
+      Azure Dragon_78: -897149189
+      Azure Dragon_5: 1405395939
+      Azure Dragon_177: -1622169982
+      Azure Dragon_146: 2001897255
+      Azure Dragon_34: -858142869
+      Azure Dragon_173: 957826744
+      Azure Dragon_96: -388327433
+      Azure Dragon_102: 1052171463
+      Azure Dragon_8: 1047288191
+      Azure Dragon_37: 200780317
+      Azure Dragon_6: 437686724
+      Azure Dragon_27_fly: 1415222116
+      Azure Dragon_163: 366189183
+      Azure Dragon_174: -1278525747
+      Azure Dragon_176: 1749955506
+      Azure Dragon_89: -1242786984
+      Azure Dragon_129: 1872525434
+      Azure Dragon_42: 1876390914
+      Azure Dragon_59: -1010100627
+      Azure Dragon_154: 725436094
+      Azure Dragon_23_fly: 2096380427
+      Azure Dragon_130: 701319353
+      Azure Dragon_141: 466151837
+      Azure Dragon_36: 407798823
+      Azure Dragon_54: -1356203259
+      Azure Dragon_179: 1088256142
+      Azure Dragon_38: 1022569776
+      Azure Dragon_80: 1427380934
+      Azure Dragon_83: 1575947592
+      Azure Dragon_145: 1682174132
+      Azure Dragon_65: 1440405273
+      Azure Dragon_62: -1009970890
+      Azure Dragon_70: -85196243
+      Azure Dragon_79: 702495789
+      Azure Dragon_114: 2051740778
+      Azure Dragon_138: -772308777
+      Azure Dragon_100: 686237973
+      Azure Dragon_90: -1098933959
+      Azure Dragon_1: 401692196
+      Azure Dragon_175: -124728111
+      Azure Dragon_139: 328115900
+      Azure Dragon_152: 1721944402
+      Azure Dragon_18_fly: 23367843
+      Azure Dragon_101: -829330172
+      Azure Dragon_156_death: 725436094
+      Azure Dragon_98: 1889036826
+      Azure Dragon_99: 916629283
+      Azure Dragon_9: 337163125
+      Azure Dragon_164: -906553242
+      Azure Dragon_47: -173003070
+      Azure Dragon_29: 1326297217
+      Azure Dragon_151: 1035664623
+      Azure Dragon_19_fly: 914430956
+      Azure Dragon_49: 1104267264
+      Azure Dragon_60: -560023227
+      Azure Dragon_63: -1437939748
+      Azure Dragon_119: 695652306
+      Azure Dragon_73: -1827165397
+      Azure Dragon_87: -2114097511
+      Azure Dragon_162: -1945387319
+      Azure Dragon_178: -1222449449
+      Azure Dragon_77: 2019523460
+      Azure Dragon_91: -1181497781
+      Azure Dragon_57: -33995753
+      Azure Dragon_51: 122878503
+      Azure Dragon_48: 1710549147
+      Azure Dragon_171: 506820892
+      Azure Dragon_136_death: 1489387117
+      Azure Dragon_144_death: 599539124
+      Azure Dragon_124: -1050613837
+      Azure Dragon_72: -1274472203
+      Azure Dragon_7: -829352486
+      Azure Dragon_167: 945788761
+      Azure Dragon_40: 1019570425
+      Azure Dragon_85: -836593446
+      Azure Dragon_21_fly: -539207744
+      Azure Dragon_165: 1342780607
+      Azure Dragon_161_attack: 1943858679
+      Azure Dragon_118: -929952749
+      Azure Dragon_132: 788357120
+      Azure Dragon_76: 787418705
+      Azure Dragon_160: 1610397760
+      Azure Dragon_28: 130005941
+      Azure Dragon_150: -1480172074
+      Azure Dragon_166: 1285432249
+      Azure Dragon_168: 1177767721
+      Azure Dragon_135_death: -985887278
+      Azure Dragon_74: -59898346
+      Azure Dragon_148: -338404946
+      Azure Dragon_140: -2071973872
+      Azure Dragon_126: 1112528595
+      Azure Dragon_52: -1983705009
+      Azure Dragon_43: 1048265797
+      Azure Dragon_105: -924365932
+      Azure Dragon_31: -2029340764
+      Azure Dragon_133: -731469903
+      Azure Dragon_143: 599539124
+      Azure Dragon_58: -862227841
+      Azure Dragon_112: -998249658
+      Azure Dragon_39: -1511445197
+      Azure Dragon_53: 1210126520
+      Azure Dragon_122: -95067756
+      Azure Dragon_155_death: 1724614029
+      Azure Dragon_10: -445389113
+      Azure Dragon_88: 270069247
+      Azure Dragon_84: -1458747036
+      Azure Dragon_50: 2064908117
+      Azure Dragon_24_fly: -850693496
+      Azure Dragon_94: -950154906
+      Azure Dragon_97: -1671092722
+      Azure Dragon_117: -1469212986
+      Azure Dragon_44: -28119980
+      Azure Dragon_116: 166892072
+      Azure Dragon_120: -1602699003
+      Azure Dragon_56: -1805030236
+      Azure Dragon_26_fly: -1052592729
+      Azure Dragon_142: 1462884498
+      Azure Dragon_71: 1064600901
+      Azure Dragon_75: -503253304
+      Azure Dragon_25_fly: 543339275
+      Azure Dragon_157_attack: 1431344247
+      Azure Dragon_67: -1966059767
+      Azure Dragon_30: 2048486456
+      Azure Dragon_128: -2129960248
+      Azure Dragon_66: -534982244
+      Azure Dragon_69: 376723410
+      Azure Dragon_103: 120794278
+      Azure Dragon_33: -1290416738
+      Azure Dragon_121: 2063107564
+      Azure Dragon_149: 364244433
+      Azure Dragon_172: 1411931161
+      Azure Dragon_110: 788649347
+      Azure Dragon_32: -158178647
+      Azure Dragon_131: 1555302706
+      Azure Dragon_14: -52941795
+      Azure Dragon_127: 2013963709
+      Azure Dragon_107: 152113959
+      Azure Dragon_169: -1558520966
+      Azure Dragon_20_fly: 971197870
+      Azure Dragon_68: -1125338426
+      Azure Dragon_115: 2019840674
+      Azure Dragon_55: 292564551
+      Azure Dragon_125: 1880375698
+      Azure Dragon_4: -1645645226
+      Azure Dragon_86: -451321033
+      Azure Dragon_137_death: 599539124
+      Azure Dragon_108: -475899456
+      Azure Dragon_123: 495021280
+      Azure Dragon_0: 1169933422
+      Azure Dragon_2: 1680570011
+      Azure Dragon_3: 694327924
+      Azure Dragon_46: -780532429
+      Azure Dragon_113: -1638257905
+      Azure Dragon_153: 1724614029
+      Azure Dragon_17_fly: 1088256142
+      Azure Dragon_95: -1675408786
+      Azure Dragon_158_attack: -715643285
+      Azure Dragon_159_attack: -493054043
+      Azure Dragon_61: -777284654
+      Azure Dragon_64: 867716169
+      Azure Dragon_134: 1415222116
+      Azure Dragon_170: -1650164155
+      Azure Dragon_109: 1970198665
+      Azure Dragon_111: 1012364081
+      Azure Dragon_82: 2116233623
+      Azure Dragon_92: 664501799
+      Azure Dragon_11: -1082074079
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

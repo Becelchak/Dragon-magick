@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using YG;
@@ -29,9 +27,12 @@ public class Player_magic : MonoBehaviour
     private int firstSkilltLevel;
     private int secondSkilltLevel;
     private int thirdSkilltLevel;
+
+    private AudioSource spellAudioSource;
     void Start()
     {
         animator = GetComponent<Animator>();
+        spellAudioSource = GetComponent<AudioSource>();
         dragon = GameObject.Find("Dragon");
 
         switch (YandexGame.savesData.skin)
@@ -125,11 +126,17 @@ public class Player_magic : MonoBehaviour
                                 var arrow = new GameObject("Magic arrow");
                                 arrow.transform.position = transform.position;
                                 arrow.AddComponent<Magic_arrow>().Initialize(MousePos, damage: 20*(firstSkilltLevel * 0.5f));
+
+                                var spellArrow = Resources.Load<AudioClip>("Sound/Spell/MagicSpell");
+                                spellAudioSource.PlayOneShot(spellArrow);
                                 break;
                             case SavesYG.PlayerSkin.Cliric:
                                 var spirit = new GameObject("Spirit of light");
                                 spirit.transform.position = transform.position;
                                 spirit.AddComponent<Spirit_of_light>().Initialize(2 * firstSkilltLevel);
+
+                                var spellSpirit = Resources.Load<AudioClip>("Sound/Spell/SpiritOfLight");
+                                spellAudioSource.PlayOneShot(spellSpirit);
                                 break;
                             case SavesYG.PlayerSkin.Piromant:
                                 pillarOfFire.SetActive(true);
@@ -152,12 +159,17 @@ public class Player_magic : MonoBehaviour
                                 var arrow = new GameObject("Magic arrow");
                                 arrow.transform.position = transform.position;
                                 arrow.AddComponent<Magic_arrow>().Initialize(MousePos, damage: 40 * (secondSkilltLevel * 0.5f), speed: 0.02f, type:"type2");
+                                var spellArrow = Resources.Load<AudioClip>("Sound/Spell/MagicBall");
+                                spellAudioSource.PlayOneShot(spellArrow);
                                 break;
                             case SavesYG.PlayerSkin.Cliric:
 
                                 var arrow2 = new GameObject("Light sword");
                                 arrow2.transform.position = transform.position;
                                 arrow2.AddComponent<Magic_arrow>().Initialize(MousePos, damage: 35 * (secondSkilltLevel * 0.5f), speed: 0.01625f, type: "type3");
+
+                                var spellSword = Resources.Load<AudioClip>("Sound/Spell/SunBlade");
+                                spellAudioSource.PlayOneShot(spellSword);
                                 break;
                             case SavesYG.PlayerSkin.Piromant:
                                 var arrow3 = new GameObject("Fireball piromant");
@@ -167,6 +179,9 @@ public class Player_magic : MonoBehaviour
                                 var randomDamage = rnd.Next(35, 70) + (3 * secondSkilltLevel);
 
                                 arrow3.AddComponent<Magic_arrow>().Initialize(MousePos, damage: randomDamage, speed: 0.0105f, type: "type4");
+
+                                var spellFire = Resources.Load<AudioClip>("Sound/Spell/FireBall");
+                                spellAudioSource.PlayOneShot(spellFire);
                                 break;
                         }
 
@@ -191,6 +206,9 @@ public class Player_magic : MonoBehaviour
                                 thunder.SetActive(true);
                                 thunder.GetComponent<SpecialSkill>().UpDamage(3 * thirdSkilltLevel);
                                 timer = thunderLifeTime;
+
+                                var spellThunder = Resources.Load<AudioClip>("Sound/Spell/Thunder");
+                                spellAudioSource.PlayOneShot(spellThunder);
                                 break;
                             case SavesYG.PlayerSkin.Piromant:
                                 Vector3 targetLeft = MousePos, target = MousePos, targetright = MousePos;

@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 using YG;
 
@@ -9,6 +7,8 @@ public class CharacterManager : MonoBehaviour
 {
     [SerializeField] private CharacterDatabase characterDB;
     [SerializeField] private GameObject iconsProgress;
+    [SerializeField] private GameObject openCharacter;
+    [SerializeField] private Text descriptionText;
     private Image skill1;
     private Image skill2;
     private Image skill3;
@@ -23,6 +23,7 @@ public class CharacterManager : MonoBehaviour
         skill3 = iconsProgress.transform.GetChild(2).GetComponent<Image>();
 
         UpdateCharacter(selectedOption);
+
     }
 
     public void NextOption()
@@ -71,6 +72,9 @@ public class CharacterManager : MonoBehaviour
         shield.GetComponentsInChildren<Text>()[1].text = character.SkillLevel[3].ToString();
         mana.GetComponentsInChildren<Text>()[1].text = character.SkillLevel[4].ToString();
 
+        CheckUnlocked(character);
+        PrepareTextDescription();
+
         switch (selectedCharacter)
         {
             case 0:
@@ -88,16 +92,70 @@ public class CharacterManager : MonoBehaviour
 
     public void SaveChange()
     {
+        //YandexGame.ResetSaveProgress();
         YandexGame.SaveProgress();
     }
 
     public void UpLevel(int numberItem)
     {
+
         var character = characterDB.GetCharacter(selectedOption);
-        character.SkillLevel[numberItem]++;
-        if (character.SkillLevel[numberItem] > 3)
-            character.SkillLevel[numberItem] = 3;
+        if (character.SkillLevel[numberItem]+ 1 <= 3 && (YandexGame.savesData.gold - character.PriceList[numberItem] >= 0))
+        {
+            character.SkillLevel[numberItem]++;
+            YandexGame.savesData.gold -= character.PriceList[numberItem];
+        }
 
         UpdateCharacter(selectedOption);
+    }
+
+    public void UnlockCharacter()
+    {
+        var character = characterDB.GetCharacter(selectedOption);
+        if (YandexGame.savesData.gold - character.PriceList[5] >= 0)
+        {
+            character.isUnlock = true;
+            YandexGame.savesData.gold -= character.PriceList[5];
+        }
+        UpdateCharacter(selectedOption);
+    }
+
+    public void CheckUnlocked(Character character)
+    {
+        if (!character.isUnlock)
+        {
+            var skills = GameObject.Find("Skills").GetComponentsInChildren<Button>();
+            foreach (var button in skills)
+            {
+                button.interactable = false;
+            }
+
+            GameObject.Find("Button save").GetComponent<Button>().interactable = false;
+
+            openCharacter.SetActive(true);
+            openCharacter.transform.GetChild(1).GetComponent<Text>().text = $"Цена: {character.PriceList[5]}";
+
+        }
+        else
+        {
+            var skills = GameObject.Find("Skills").GetComponentsInChildren<Button>();
+            foreach (var button in skills)
+            {
+                button.interactable = true;
+            }
+
+            GameObject.Find("Button save").GetComponent<Button>().interactable = true;
+            openCharacter.SetActive(false);
+        }
+    }
+
+    public void PrepareTextDescription()
+    {
+        var character = characterDB.GetCharacter(selectedOption);
+        var listText = character.description.Split(';');
+        descriptionText.text = String.Format("{0} \n {1} - {2} \n {3} - {4} \n {5} - {6}", listText[0], 
+            character.SkillName[0], listText[1],
+            character.SkillName[1], listText[2],
+            character.SkillName[2], listText[3]);
     }
 }

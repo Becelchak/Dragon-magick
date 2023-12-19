@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace YG
 {
     [System.Serializable]
@@ -14,9 +16,11 @@ namespace YG
         // Можно удалить этот код, но тогда удалите и демо (папка Example)
         //Saves?
         public PlayerSkin skin;
+        public DragonType enemy;
         public int gold = 0;
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
+        public Dragon NowDragon;
         public Character NowCharacter;
         public enum PlayerSkin
         {
@@ -25,12 +29,23 @@ namespace YG
             Piromant = 2,
         }
 
+        public enum DragonType
+        {
+            Vivern = 0,
+            SwampDragon = 1,
+            MountainDragon = 2,
+        }
+
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {
             // Допустим, задать значения по умолчанию для отдельных элементов массива
 
             //openLevels[1] = true;
+            //for(var i = 0; i < NowCharacter.SkillLevel.Count; i++)
+            //{
+            //    NowCharacter.SkillLevel[i] = 1;
+            //}
         }
     }
 }

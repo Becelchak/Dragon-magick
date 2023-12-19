@@ -4,6 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
+using YG;
 using static Fireball;
 using static UnityEngine.GraphicsBuffer;
 
@@ -33,6 +34,8 @@ public class Dragon_move : MonoBehaviour
     private float coldownTimer = 0;
     [SerializeField] private Animator animator;
     private GameObject targetForAttack;
+    private AudioSource dragonAudioSource;
+    private AudioClip attackClip;
 
     [Header("player and village status")] 
     [SerializeField] private GameObject player;
@@ -43,10 +46,13 @@ public class Dragon_move : MonoBehaviour
 
     void Start()
     {
+        speed = YandexGame.savesData.NowDragon.speedMove;
         animator = GetComponent<Animator>();
         shieldCLass = player.GetComponent<Player_shield>();
         Random.InitState(25696);
         Health = GetComponent<Dragon_HealPoint>();
+        dragonAudioSource = GetComponent<AudioSource>();
+        attackClip = Resources.Load<AudioClip>("Sound/dragon_attack");
     }
 
     void Update()
@@ -194,6 +200,8 @@ public class Dragon_move : MonoBehaviour
         // Start animation attack
         if (!isAttack && !Health.Dead())
         {
+            dragonAudioSource.PlayOneShot(attackClip);
+
             isAttack = true;
             animator.SetTrigger("Attack");
 
@@ -201,7 +209,6 @@ public class Dragon_move : MonoBehaviour
             var fireball = new GameObject($"Fireball on {target_name}");
             fireball.transform.position = transform.position;
             fireball.AddComponent<Fireball>().Initialize(targetForAttack);
-            //Debug.Log("Create fire");
         }
     }
 

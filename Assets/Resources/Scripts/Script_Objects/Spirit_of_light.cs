@@ -32,11 +32,14 @@ public class Spirit_of_light : MonoBehaviour
     void Start()
     {
         this.AddComponent<BoxCollider>();
-        this.AddComponent<SpriteRenderer>();
+        
         animator = GameObject.Find("Primal spirit of light").GetComponent<Animator>();
 
         if(name != "Primal spirit of light")
+        {
+            this.AddComponent<SpriteRenderer>();
             this.AddComponent<Animator>().runtimeAnimatorController = animator.runtimeAnimatorController;
+        }
 
         // Set collider parameter
         var box_collider = GetComponent<BoxCollider>();

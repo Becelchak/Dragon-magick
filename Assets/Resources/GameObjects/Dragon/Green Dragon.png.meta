@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 624d136c2f49f164cbe06bacd238b21f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Green Dragon_37_attack
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 479
+        width: 125
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5781b8f0ca94ee1499dc19f88ce3c30e
+      internalID: 883151464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_38_attack
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 448
+        width: 145
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11875a22b6daf414787fb3d6fe3a7028
+      internalID: 1797265034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_39_attack
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 447
+        width: 138
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9541df260912fbe4ca067cedd5dde2c9
+      internalID: -1232037308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_40_attack
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 454
+        width: 136
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f249bc7494ca20747a5be30125aa6743
+      internalID: 528391059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_41_attack
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 397
+        width: 169
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f2fd00abc66a2478c05df6e3f1f25d
+      internalID: -993463876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_42_fly
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 460
+        width: 111
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3e21858ece28b4392dcef576e5a55a
+      internalID: -1263537922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_43_fly
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 468
+        width: 145
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab865a0a63bef774dbd65ff5e6e04908
+      internalID: 303537883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_44_fly
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 461
+        width: 171
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7d46a32cd309a4f9eb087367b10cb4
+      internalID: 71059310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_75_fly
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 250
+        width: 174
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04beb459022ca0844aa6341c1fbf1482
+      internalID: 1462166661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_91_fly
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 232
+        width: 181
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124910e8ddcf73b4896245178f435c04
+      internalID: -1915022992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_92_fly
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 263
+        width: 181
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74b8ce7dde09db459b2e1889abda8c9
+      internalID: -55386230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_94_fly
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 251
+        width: 138
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544ea32a2122fa544ac2e47602d29fed
+      internalID: 1123669015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_95_fly
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 250
+        width: 128
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ff1410fcd8876488bb61b2594fd822
+      internalID: 701876857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_96_fly
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 244
+        width: 109
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e461c72a9b5c1b478065936cbfb89d0
+      internalID: 707744288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_97_fly
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 242
+        width: 142
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc58e6ed7ebd077498bf53fa0eff0621
+      internalID: 541222174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_98_fly
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 243
+        width: 130
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918e4e47ea6950a42bcb6a957803bb09
+      internalID: 1827351998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_109
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 86
+        width: 121
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ae77d1893c0dc4bb9a942edf3a81cb
+      internalID: -171020236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_110_death
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 87
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d138db24919cf5842873f63f6d3e8d9d
+      internalID: 359748524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_111_death
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 82
+        width: 116
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b967de183032ff84fa17b4459791da40
+      internalID: 190204894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_117
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 90
+        width: 140
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c9c4c216376f8448ea4836b091e161
+      internalID: 192160601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_118
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 88
+        width: 117
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da163bce1c7a52a438418ffb4dadd02a
+      internalID: -1301374149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_119
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 89
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1516f36d365a2459cedef261a78596
+      internalID: 1141008719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_120_death
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 81
+        width: 113
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279662f9251b4e642a81dba2a37f82ea
+      internalID: 1056285800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_149_death
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 81
+        width: 106
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216d382dc153cbe40ad2c5e063083f19
+      internalID: 65879152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Dragon_150_death
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 89
+        width: 96
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c395f158c0c0bee40bf639e5230ae29e
+      internalID: -399731262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Green Dragon_110_death: 359748524
+      Green Dragon_100: -905400159
+      Green Dragon_51: 1614215084
+      Green Dragon_3: -2101106783
+      Green Dragon_1: -461610980
+      Green Dragon_48: 468951817
+      Green Dragon_146: -333445406
+      Green Dragon_94_fly: 701876857
+      Green Dragon_109: -171020236
+      Green Dragon_54: -413926972
+      Green Dragon_62: 1293853319
+      Green Dragon_150_death: -399731262
+      Green Dragon_5: -1860121969
+      Green Dragon_4: -703890107
+      Green Dragon_56: 1678949523
+      Green Dragon_9: -1414497207
+      Green Dragon_115: 585672181
+      Green Dragon_144: -1322425137
+      Green Dragon_86: -2039001911
+      Green Dragon_23: 1813889747
+      Green Dragon_21: 503594299
+      Green Dragon_57: -1698117237
+      Green Dragon_122: -1092759192
+      Green Dragon_130: -357595920
+      Green Dragon_64: 1776609343
+      Green Dragon_53: -1571496159
+      Green Dragon_116: -662242716
+      Green Dragon_15: 1489785479
+      Green Dragon_141: 2018637459
+      Green Dragon_79: 2078049748
+      Green Dragon_17: -748280739
+      Green Dragon_81: 1893266445
+      Green Dragon_12: 517277917
+      Green Dragon_125: 1508855039
+      Green Dragon_123: 1907426142
+      Green Dragon_99: -1974001069
+      Green Dragon_107: 1052151521
+      Green Dragon_46: -1815843559
+      Green Dragon_154: 1683307272
+      Green Dragon_37_attack: 883151464
+      Green Dragon_36: 846191411
+      Green Dragon_114: -1949711423
+      Green Dragon_157: 694378964
+      Green Dragon_2: -1254114422
+      Green Dragon_89: 1535548574
+      Green Dragon_85: 1934350626
+      Green Dragon_156: -913926888
+      Green Dragon_60: -526529199
+      Green Dragon_158: -260850225
+      Green Dragon_80: -1863731666
+      Green Dragon_108: 1166024015
+      Green Dragon_59: -846065701
+      Green Dragon_58: -1219222449
+      Green Dragon_117: 192160601
+      Green Dragon_98_fly: 1827351998
+      Green Dragon_20: 5553762
+      Green Dragon_145: -1128799209
+      Green Dragon_148: -916470308
+      Green Dragon_137: -1896401439
+      Green Dragon_105: 1755010964
+      Green Dragon_70: -1156380797
+      Green Dragon_132: -1927172871
+      Green Dragon_119: -808810774
+      Green Dragon_28: -1253438835
+      Green Dragon_47: 264984857
+      Green Dragon_135: 2107220994
+      Green Dragon_38_attack: 1797265034
+      Green Dragon_65: 905840440
+      Green Dragon_113: -399731262
+      Green Dragon_143: -950745040
+      Green Dragon_10: 2063775817
+      Green Dragon_32: 1424113877
+      Green Dragon_50: -297632246
+      Green Dragon_67: 913277549
+      Green Dragon_74: 1713086591
+      Green Dragon_34: 1056285800
+      Green Dragon_138: -1438793417
+      Green Dragon_61: 484774570
+      Green Dragon_66: 2033205707
+      Green Dragon_140: 2101589191
+      Green Dragon_43_fly: 303537883
+      Green Dragon_128: 65879152
+      Green Dragon_139: -1702029331
+      Green Dragon_136: 1576330828
+      Green Dragon_91_fly: -55386230
+      Green Dragon_75_fly: 1123669015
+      Green Dragon_13: -1412704899
+      Green Dragon_29: -549588538
+      Green Dragon_39_attack: -1232037308
+      Green Dragon_30: -1074742027
+      Green Dragon_88: 369000925
+      Green Dragon_69: 1672169938
+      Green Dragon_8: -1275055611
+      Green Dragon_82: 71059310
+      Green Dragon_49: -1035296518
+      Green Dragon_18: 1864112797
+      Green Dragon_76: -1984629159
+      Green Dragon_35: -1381505893
+      Green Dragon_7: -1850104136
+      Green Dragon_104: -1917599218
+      Green Dragon_78: -1783247440
+      Green Dragon_11: -1526337155
+      Green Dragon_93: -1180942260
+      Green Dragon_153: -2146258150
+      Green Dragon_19: 1844890504
+      Green Dragon_68: -883878386
+      Green Dragon_142: 139835166
+      Green Dragon_0: -1094893535
+      Green Dragon_41_attack: -993463876
+      Green Dragon_96_fly: 541222174
+      Green Dragon_149_death: 65879152
+      Green Dragon_22: -434811630
+      Green Dragon_112: 2040409130
+      Green Dragon_131: 1001362091
+      Green Dragon_84: -170128369
+      Green Dragon_42_fly: -1263537922
+      Green Dragon_102: 1624216444
+      Green Dragon_129: 1223924456
+      Green Dragon_26: -1610384395
+      Green Dragon_121: 1152119095
+      Green Dragon_152: 2049803115
+      Green Dragon_133: 1827351998
+      Green Dragon_40_attack: 528391059
+      Green Dragon_25: 788859043
+      Green Dragon_71: -1010136977
+      Green Dragon_97_fly: 541222174
+      Green Dragon_55: 1009922199
+      Green Dragon_45: 132324608
+      Green Dragon_103: -1987762376
+      Green Dragon_134: -1803690711
+      Green Dragon_124: 1304948996
+      Green Dragon_52: 1797265034
+      Green Dragon_63: 719028222
+      Green Dragon_72: 1207861517
+      Green Dragon_111_death: 190204894
+      Green Dragon_95_fly: 707744288
+      Green Dragon_33: 1573455686
+      Green Dragon_6: 2065406923
+      Green Dragon_101: -137882157
+      Green Dragon_24: -823283425
+      Green Dragon_127: -912782882
+      Green Dragon_16: 1136552527
+      Green Dragon_87: -113910898
+      Green Dragon_44_fly: 71059310
+      Green Dragon_77: 1820106819
+      Green Dragon_126: 559571762
+      Green Dragon_27: 1231198609
+      Green Dragon_106: -1873073098
+      Green Dragon_151: -2059685293
+      Green Dragon_73: 1812080536
+      Green Dragon_92_fly: 1462166661
+      Green Dragon_159: 990983886
+      Green Dragon_31: 883151464
+      Green Dragon_155: -432510462
+      Green Dragon_83: 190204894
+      Green Dragon_120_death: 1056285800
+      Green Dragon_147: -1854497302
+      Green Dragon_90: -1301374149
+      Green Dragon_118: 790318308
+      Green Dragon_14: -1915022992
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -21,6 +21,7 @@ public class Village_heal_point : MonoBehaviour
         foreach (var structure in village.Where(structure => structure.Getstatus()))
         {
             village.Remove(structure);
+            break;
         }
 
         if (village.Count != 0) return;

@@ -1,18 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
 public class ProgressCheck : MonoBehaviour
 {
-    [SerializeField] private Text goldCount;
+    [SerializeField] 
+    [CanBeNull] private Text goldCount;
+
+    [SerializeField] 
+    private Text price;
+
+    [SerializeField] 
+    private int number;
     void Start()
     {
     }
 
     void Update()
     {
-        goldCount.text = YandexGame.savesData.gold.ToString();
+        if(goldCount != null)
+            goldCount.text = YandexGame.savesData.gold.ToString();
+        else
+        {
+            price.text = $"Цена: {YandexGame.savesData.NowCharacter.PriceList[number].ToString()}";
+        }
     }
 }

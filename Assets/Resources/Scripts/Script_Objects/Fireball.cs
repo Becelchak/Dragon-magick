@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using YG;
 
 public class Fireball : MonoBehaviour
 {
@@ -18,8 +19,22 @@ public class Fireball : MonoBehaviour
         this.AddComponent<SphereCollider>();
         this.AddComponent<SpriteRenderer>();
         animator = GameObject.Find("Primal fireball").GetComponent<Animator>();
-
         this.AddComponent<Animator>().runtimeAnimatorController = animator.runtimeAnimatorController;
+        var dragonType = YandexGame.savesData.enemy;
+
+        switch (dragonType)
+        {
+            case SavesYG.DragonType.Vivern:
+                GetComponent<Animator>().SetTrigger("Vivern_fire");
+                break;
+            case SavesYG.DragonType.SwampDragon:
+                GetComponent<Animator>().SetTrigger("SwampDragon_fire");
+                break;
+            case SavesYG.DragonType.MountainDragon:
+                GetComponent<Animator>().SetTrigger("MountainDragon_fire");
+                break;
+        }
+        speed = YandexGame.savesData.NowDragon.speedFireball;
 
         var box_collider = GetComponent<SphereCollider>();
         box_collider.radius = 0.4f;
