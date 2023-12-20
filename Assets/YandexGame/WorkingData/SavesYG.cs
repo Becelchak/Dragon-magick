@@ -15,8 +15,8 @@ namespace YG
         // Тестовые сохранения для демо сцены
         // Можно удалить этот код, но тогда удалите и демо (папка Example)
         //Saves?
-        public PlayerSkin skin;
-        public DragonType enemy;
+        public PlayerSkin skin = PlayerSkin.Wanderer;
+        public DragonType enemy = DragonType.Vivern;
         public int gold = 0;
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны

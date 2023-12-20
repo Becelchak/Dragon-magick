@@ -14,11 +14,14 @@ public class Player_set_character : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+    }
+    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
 
+    void Prepare()
+    {
         var skill1 = skillsCanvas.transform.GetChild(0).transform.GetChild(0).GetComponent<Image>();
         var skill2 = skillsCanvas.transform.GetChild(1).transform.GetChild(0).GetComponent<Image>();
         var skill3 = skillsCanvas.transform.GetChild(2).transform.GetChild(0).GetComponent<Image>();
-
         character = YandexGame.savesData.skin;
 
         switch (character)
@@ -52,5 +55,11 @@ public class Player_set_character : MonoBehaviour
                 animator.runtimeAnimatorController = Resources.Load("Animation/Fire mage/Player_fire") as RuntimeAnimatorController;
                 break;
         }
+    }
+
+    void Update()
+    {
+        if (YandexGame.SDKEnabled)
+            Prepare();
     }
 }

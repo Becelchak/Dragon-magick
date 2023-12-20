@@ -21,9 +21,14 @@ public class CharacterManager : MonoBehaviour
         skill1 = iconsProgress.transform.GetChild(0).GetComponent<Image>();
         skill2 = iconsProgress.transform.GetChild(1).GetComponent<Image>();
         skill3 = iconsProgress.transform.GetChild(2).GetComponent<Image>();
+    }
 
-        UpdateCharacter(selectedOption);
-
+    void Update()
+    {
+        if(YandexGame.SDKEnabled)
+        {
+            UpdateCharacter(selectedOption);
+        }
     }
 
     public void NextOption()

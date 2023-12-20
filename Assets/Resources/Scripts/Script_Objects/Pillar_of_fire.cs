@@ -31,4 +31,9 @@ public class Pillar_of_fire : MonoBehaviour
             health.GetDamage(damage);
         }
     }
+
+    public void UpDamage(int modification)
+    {
+        damage += modification;
+    }
 }

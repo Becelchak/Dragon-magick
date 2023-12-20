@@ -1,5 +1,5 @@
 {
-    "idSave": 3,
+    "idSave": 11131,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
@@ -9,7 +9,7 @@
     "NowDragon": {
         "name": "Красная виверна",
         "sprite": {
-            "instanceID": 25624
+            "instanceID": 25736
         },
         "health": 100,
         "speedMove": 1.0,
@@ -22,19 +22,19 @@
     "NowCharacter": {
         "name": "Странствующий маг Легран",
         "sprite": {
-            "instanceID": 25630
+            "instanceID": 25742
         },
         "animator": {
-            "instanceID": 25632
+            "instanceID": 25744
         },
         "skill1": {
-            "instanceID": 25634
+            "instanceID": 25746
         },
         "skill2": {
-            "instanceID": 25636
+            "instanceID": 25748
         },
         "skill3": {
-            "instanceID": 25638
+            "instanceID": 25750
         },
         "SkillLevel": [
             1,

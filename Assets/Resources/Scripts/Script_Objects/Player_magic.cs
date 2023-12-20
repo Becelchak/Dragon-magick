@@ -35,6 +35,12 @@ public class Player_magic : MonoBehaviour
         spellAudioSource = GetComponent<AudioSource>();
         dragon = GameObject.Find("Dragon");
 
+    }
+
+    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
+
+    void Prepare()
+    {
         switch (YandexGame.savesData.skin)
         {
             case SavesYG.PlayerSkin.Wanderer:
@@ -60,6 +66,8 @@ public class Player_magic : MonoBehaviour
 
     void Update()
     {
+        if (YandexGame.SDKEnabled)
+            Prepare();
         if (isThirdSkillUse)
         {
             timer -= Time.deltaTime;
@@ -140,7 +148,10 @@ public class Player_magic : MonoBehaviour
                                 break;
                             case SavesYG.PlayerSkin.Piromant:
                                 pillarOfFire.SetActive(true);
-                                pillarOfFire.GetComponent<SpecialSkill>().UpDamage(3 * firstSkilltLevel);
+                                pillarOfFire.GetComponent<Pillar_of_fire>().UpDamage(3 * firstSkilltLevel);
+
+                                var spellPillar = Resources.Load<AudioClip>("Sound/Spell/PillarOfFire");
+                                spellAudioSource.PlayOneShot(spellPillar);
                                 break;
                         }
                     }
@@ -201,6 +212,9 @@ public class Player_magic : MonoBehaviour
                                 starRain.SetActive(true);
                                 starRain.GetComponent<SpecialSkill>().UpDamage(3 * thirdSkilltLevel);
                                 timer = starRainLifeTime;
+
+                                var spellStarRain = Resources.Load<AudioClip>("Sound/Spell/StarRain");
+                                spellAudioSource.PlayOneShot(spellStarRain);
                                 break;
                             case SavesYG.PlayerSkin.Cliric:
                                 thunder.SetActive(true);
@@ -229,6 +243,9 @@ public class Player_magic : MonoBehaviour
                                 magma1.AddComponent<Magic_arrow>().Initialize(targetLeft, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.01959f, type: "type4");
                                 magma2.AddComponent<Magic_arrow>().Initialize(target, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.01959f, type: "type4");
                                 magma3.AddComponent<Magic_arrow>().Initialize(targetright, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.01959f, type: "type4");
+
+                                var spellMagma = Resources.Load<AudioClip>("Sound/Spell/MagmaBall");
+                                spellAudioSource.PlayOneShot(spellMagma);
                                 break;
                         }
                     }

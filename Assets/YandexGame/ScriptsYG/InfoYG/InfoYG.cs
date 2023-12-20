@@ -79,7 +79,7 @@ namespace YG
         public float durationOfAdSimulation = 0.5f;
 
         [Tooltip("Задержка открытия полноэкранной рекламы. Может быть полезна для тестирования уведомления о том, что скоро откроется реклама, перед ёё показом (в момент ожидания рекламы)."), Min(0)]
-        public float loadAdWithDelaySimulation = 0.0f;
+        public float loadAdWithDelaySimulation = 1.0f;
 
         [Tooltip("Нажмите галочку, чтобы сэмулировать вызов ошибки при просмотре рекламы за вознаграждение. (Только для Unity Editor)")]
         public bool testErrorOfRewardedAdsInEditor;

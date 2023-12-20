@@ -20,6 +20,21 @@ public class Fireball : MonoBehaviour
         this.AddComponent<SpriteRenderer>();
         animator = GameObject.Find("Primal fireball").GetComponent<Animator>();
         this.AddComponent<Animator>().runtimeAnimatorController = animator.runtimeAnimatorController;
+
+        var box_collider = GetComponent<SphereCollider>();
+        box_collider.radius = 0.4f;
+        box_collider.isTrigger = true;
+
+        var sprite = GetComponent<SpriteRenderer>();
+        sprite.sortingLayerName = "GameObjects";
+        sprite.sortingOrder = 4;
+
+    }
+
+    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
+
+    void Prepare()
+    {
         var dragonType = YandexGame.savesData.enemy;
 
         switch (dragonType)
@@ -35,14 +50,6 @@ public class Fireball : MonoBehaviour
                 break;
         }
         speed = YandexGame.savesData.NowDragon.speedFireball;
-
-        var box_collider = GetComponent<SphereCollider>();
-        box_collider.radius = 0.4f;
-        box_collider.isTrigger = true;
-
-        var sprite = GetComponent<SpriteRenderer>();
-        sprite.sortingLayerName = "GameObjects";
-        sprite.sortingOrder = 4;
     }
 
     public  void Initialize(GameObject target)
@@ -59,6 +66,8 @@ public class Fireball : MonoBehaviour
     }
     void Update()
     {
+        if (YandexGame.SDKEnabled)
+            Prepare();
         if (isExplosion)
         {
             GetComponent<Animator>().SetTrigger("Explode");

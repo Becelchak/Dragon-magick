@@ -14,7 +14,28 @@ public class Player_shield : MonoBehaviour
     private Animator animator;
     public bool shieldActive = false;
 
+
+    private AudioSource spellAudioSource;
+
     void Start()
+    {
+        spellAudioSource = GetComponent<AudioSource>();
+
+        Shield.SetActive(false);
+        animator = GetComponent<Animator>();
+        timer = Life_time;
+
+        var collider = Shield.GetComponent<BoxCollider>();
+        var sprite = Shield.transform;
+
+        collider.size *= shieldLevelCharacter;
+        sprite.localScale *= shieldLevelCharacter;
+
+    }
+
+    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
+
+    void Prepare()
     {
         switch (YandexGame.savesData.skin)
         {
@@ -28,19 +49,12 @@ public class Player_shield : MonoBehaviour
                 shieldLevelCharacter = CharacterDB.characterList[2].SkillLevel[3];
                 break;
         }
-        Shield.SetActive(false);
-        animator = GetComponent<Animator>();
-        timer = Life_time;
-
-        var collider = Shield.GetComponent<BoxCollider>();
-        var sprite = Shield.transform;
-
-        collider.size *= shieldLevelCharacter;
-        sprite.localScale *= shieldLevelCharacter;
     }
 
     void Update()
     {
+        if (YandexGame.SDKEnabled)
+            Prepare();
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z += Camera.main.nearClipPlane;
         Shield.transform.position = mousePosition;
@@ -56,6 +70,8 @@ public class Player_shield : MonoBehaviour
         {
             if (!shieldActive)
             {
+                var shueldSpell = Resources.Load<AudioClip>("Sound/Spell/Shield");
+                spellAudioSource.PlayOneShot(shueldSpell);
                 animator.SetTrigger("Shield");
             }
 

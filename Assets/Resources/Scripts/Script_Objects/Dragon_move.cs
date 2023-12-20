@@ -46,17 +46,27 @@ public class Dragon_move : MonoBehaviour
 
     void Start()
     {
-        speed = YandexGame.savesData.NowDragon.speedMove;
         animator = GetComponent<Animator>();
         shieldCLass = player.GetComponent<Player_shield>();
         Random.InitState(25696);
         Health = GetComponent<Dragon_HealPoint>();
         dragonAudioSource = GetComponent<AudioSource>();
         attackClip = Resources.Load<AudioClip>("Sound/dragon_attack");
+
+    }
+
+    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
+
+    void Prepare()
+    {
+        speed = YandexGame.savesData.NowDragon.speedMove;
     }
 
     void Update()
     {
+
+        if(YandexGame.SDKEnabled)
+            Prepare();
         // if Dead -> stop all end move to death point
         if (GetComponent<Dragon_HealPoint>().Dead())
         {

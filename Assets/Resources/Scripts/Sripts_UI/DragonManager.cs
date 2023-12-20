@@ -15,7 +15,9 @@ public class DragonManager : MonoBehaviour
     private int selectedOption = 0;
     void Start()
     {
-        UpdateDragon();
+        if (YandexGame.SDKEnabled)
+            UpdateDragon();
+
     }
 
     public void NextOption()

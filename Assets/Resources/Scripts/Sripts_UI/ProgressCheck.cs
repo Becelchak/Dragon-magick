@@ -13,9 +13,6 @@ public class ProgressCheck : MonoBehaviour
 
     [SerializeField] 
     private int number;
-    void Start()
-    {
-    }
 
     void Update()
     {

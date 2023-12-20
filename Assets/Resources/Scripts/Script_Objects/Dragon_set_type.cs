@@ -11,6 +11,12 @@ public class Dragon_set_type : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+    }
+
+    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
+
+    void Prepare()
+    {
         dragon = YandexGame.savesData.enemy;
 
         switch (dragon)
@@ -25,5 +31,11 @@ public class Dragon_set_type : MonoBehaviour
                 animator.SetTrigger("Mountain");
                 break;
         }
+    }
+
+    void Update()
+    {
+        if (YandexGame.SDKEnabled)
+            Prepare();
     }
 }

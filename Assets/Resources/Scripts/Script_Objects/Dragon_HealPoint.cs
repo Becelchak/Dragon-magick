@@ -34,8 +34,7 @@ public class Dragon_HealPoint : MonoBehaviour
     private int goldReward;
     void Start()
     {
-        healtPoint = YandexGame.savesData.NowDragon.health;
-        percentHealth = healtPoint / 100;
+       percentHealth = healtPoint / 100;
 
         GameEndUI = GameObject.Find("Win Menu");
         GameEndUICanvas = GameEndUI.GetComponent<CanvasGroup>();
@@ -45,8 +44,9 @@ public class Dragon_HealPoint : MonoBehaviour
         healthMain = healthBar.transform.GetChild(1).GetComponent<Image>();
 
         dragonAudioSource = GetComponent<AudioSource>();
-    }
 
+        YandexGame.GetDataEvent += Prepare;
+    }
     void Update()
     {
         healthMain.fillAmount = healtPoint / (percentHealth * 100);
@@ -93,6 +93,11 @@ public class Dragon_HealPoint : MonoBehaviour
     public bool Dead()
     {
         return isDead;
+    }
+
+    private void Prepare()
+    {
+        healtPoint = YandexGame.savesData.NowDragon.health;
     }
 
     private void GetTreasure()
