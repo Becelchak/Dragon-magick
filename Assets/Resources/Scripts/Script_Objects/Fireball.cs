@@ -7,7 +7,7 @@ using YG;
 
 public class Fireball : MonoBehaviour
 {
-    private float speed = 0.05f;
+    private float speed = 0.3f;
     [SerializeField] private bool isExplosion = false;
     private GameObject target;
     private Animator animator;
@@ -31,7 +31,6 @@ public class Fireball : MonoBehaviour
 
     }
 
-    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
 
     void Prepare()
     {
@@ -41,15 +40,17 @@ public class Fireball : MonoBehaviour
         {
             case SavesYG.DragonType.Vivern:
                 GetComponent<Animator>().SetTrigger("Vivern_fire");
+                speed = YandexGame.savesData.dragons[0].speedFireball;
                 break;
             case SavesYG.DragonType.SwampDragon:
                 GetComponent<Animator>().SetTrigger("SwampDragon_fire");
+                speed = YandexGame.savesData.dragons[1].speedFireball;
                 break;
             case SavesYG.DragonType.MountainDragon:
                 GetComponent<Animator>().SetTrigger("MountainDragon_fire");
+                speed = YandexGame.savesData.dragons[2].speedFireball;
                 break;
         }
-        speed = YandexGame.savesData.NowDragon.speedFireball;
     }
 
     public  void Initialize(GameObject target)

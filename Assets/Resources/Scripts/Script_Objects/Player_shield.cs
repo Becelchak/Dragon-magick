@@ -40,13 +40,13 @@ public class Player_shield : MonoBehaviour
         switch (YandexGame.savesData.skin)
         {
             case SavesYG.PlayerSkin.Wanderer:
-                shieldLevelCharacter = CharacterDB.characterList[0].SkillLevel[3];
+                shieldLevelCharacter = YandexGame.savesData.characters[0].SkillLevel[3];
                 break;
             case SavesYG.PlayerSkin.Cliric:
-                shieldLevelCharacter = CharacterDB.characterList[1].SkillLevel[3];
+                shieldLevelCharacter = YandexGame.savesData.characters[1].SkillLevel[3];
                 break;
             case SavesYG.PlayerSkin.Piromant:
-                shieldLevelCharacter = CharacterDB.characterList[2].SkillLevel[3];
+                shieldLevelCharacter = YandexGame.savesData.characters[2].SkillLevel[3];
                 break;
         }
     }

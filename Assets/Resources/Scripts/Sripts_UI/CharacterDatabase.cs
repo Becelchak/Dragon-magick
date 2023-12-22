@@ -21,4 +21,9 @@ public class CharacterDatabase : ScriptableObject
     {
         return characterList[index];
     }
+
+    public void Add(Character[] characters)
+    {
+        characterList = characters;
+    }
 }

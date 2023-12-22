@@ -23,19 +23,24 @@ public class CharacterManager : MonoBehaviour
         skill3 = iconsProgress.transform.GetChild(2).GetComponent<Image>();
     }
 
-    void Update()
+    private void OnEnable() => YandexGame.GetDataEvent += GetData;
+    private void OnDisable() => YandexGame.GetDataEvent -= GetData;
+
+    private void GetData()
     {
-        if(YandexGame.SDKEnabled)
-        {
+        YandexGame.savesData.Load();
+    }
+
+    private void Update()
+    {
             UpdateCharacter(selectedOption);
-        }
     }
 
     public void NextOption()
     {
         selectedOption++;
 
-        if (selectedOption >= characterDB.CharacterCount)
+        if (selectedOption >= YandexGame.savesData.characters.Length)
             selectedOption = 0;
 
         UpdateCharacter(selectedOption);
@@ -46,22 +51,22 @@ public class CharacterManager : MonoBehaviour
         selectedOption--;
 
         if(selectedOption < 0)
-            selectedOption = characterDB.CharacterCount - 1;
+            selectedOption = YandexGame.savesData.characters.Length - 1;
 
         UpdateCharacter(selectedOption);
     }
 
     public void UpdateCharacter(int selectedCharacter)
     {
-        var character = characterDB.GetCharacter(selectedCharacter);
+        var character = YandexGame.savesData.characters[selectedCharacter];
         spriteCharacter.sprite = character.sprite;
         nameCharacter.text = character.name;
 
         YandexGame.savesData.NowCharacter = character;
 
-        skill1.sprite = characterDB.characterList[selectedOption].skill1;
-        skill2.sprite = characterDB.characterList[selectedOption].skill2;
-        skill3.sprite = characterDB.characterList[selectedOption].skill3;
+        skill1.sprite = YandexGame.savesData.characters[selectedCharacter].skill1;
+        skill2.sprite = YandexGame.savesData.characters[selectedCharacter].skill2;
+        skill3.sprite = YandexGame.savesData.characters[selectedCharacter].skill3;
 
         skill1.gameObject.GetComponentInChildren<Text>().text = character.SkillName[0];
         skill2.gameObject.GetComponentInChildren<Text>().text = character.SkillName[1];
@@ -80,31 +85,31 @@ public class CharacterManager : MonoBehaviour
         CheckUnlocked(character);
         PrepareTextDescription();
 
-        switch (selectedCharacter)
-        {
-            case 0:
-                YandexGame.savesData.skin = SavesYG.PlayerSkin.Wanderer;
-                break;
-            case 1:
-                YandexGame.savesData.skin = SavesYG.PlayerSkin.Cliric;
-                break;
-            case 2:
-                YandexGame.savesData.skin = SavesYG.PlayerSkin.Piromant;
-                break;
-        }
+        if(character.isUnlock)
+            switch (selectedCharacter)
+            {
+                case 0:
+                    YandexGame.savesData.skin = SavesYG.PlayerSkin.Wanderer;
+                    break;
+                case 1:
+                    YandexGame.savesData.skin = SavesYG.PlayerSkin.Cliric;
+                    break;
+                case 2:
+                    YandexGame.savesData.skin = SavesYG.PlayerSkin.Piromant;
+                    break;
+            }
 
     }
 
     public void SaveChange()
     {
-        //YandexGame.ResetSaveProgress();
         YandexGame.SaveProgress();
     }
 
     public void UpLevel(int numberItem)
     {
 
-        var character = characterDB.GetCharacter(selectedOption);
+        var character = YandexGame.savesData.characters[selectedOption];
         if (character.SkillLevel[numberItem]+ 1 <= 3 && (YandexGame.savesData.gold - character.PriceList[numberItem] >= 0))
         {
             character.SkillLevel[numberItem]++;
@@ -112,17 +117,19 @@ public class CharacterManager : MonoBehaviour
         }
 
         UpdateCharacter(selectedOption);
+        YandexGame.SaveProgress();
     }
 
     public void UnlockCharacter()
     {
-        var character = characterDB.GetCharacter(selectedOption);
+        var character = YandexGame.savesData.characters[selectedOption];
         if (YandexGame.savesData.gold - character.PriceList[5] >= 0)
         {
             character.isUnlock = true;
             YandexGame.savesData.gold -= character.PriceList[5];
         }
         UpdateCharacter(selectedOption);
+        YandexGame.SaveProgress();
     }
 
     public void CheckUnlocked(Character character)
@@ -156,7 +163,7 @@ public class CharacterManager : MonoBehaviour
 
     public void PrepareTextDescription()
     {
-        var character = characterDB.GetCharacter(selectedOption);
+        var character = YandexGame.savesData.characters[selectedOption];
         var listText = character.description.Split(';');
         descriptionText.text = String.Format("{0} \n {1} - {2} \n {3} - {4} \n {5} - {6}", listText[0], 
             character.SkillName[0], listText[1],

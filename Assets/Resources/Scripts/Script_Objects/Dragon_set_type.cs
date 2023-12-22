@@ -5,15 +5,12 @@ using YG;
 
 public class Dragon_set_type : MonoBehaviour
 {
-    [SerializeField] private DragonDatabase dragonDB;
     private Animator animator;
     private SavesYG.DragonType dragon;
     void Start()
     {
         animator = GetComponent<Animator>();
     }
-
-    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
 
     void Prepare()
     {
@@ -32,6 +29,7 @@ public class Dragon_set_type : MonoBehaviour
                 break;
         }
     }
+
 
     void Update()
     {

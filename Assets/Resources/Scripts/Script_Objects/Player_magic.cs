@@ -37,29 +37,27 @@ public class Player_magic : MonoBehaviour
 
     }
 
-    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
-
     void Prepare()
     {
         switch (YandexGame.savesData.skin)
         {
             case SavesYG.PlayerSkin.Wanderer:
-                firstSkilltLevel = CharacterDB.characterList[0].SkillLevel[0];
-                secondSkilltLevel = CharacterDB.characterList[0].SkillLevel[1];
-                thirdSkilltLevel = CharacterDB.characterList[0].SkillLevel[2];
-                manaLevel = CharacterDB.characterList[0].SkillLevel[4];
+                firstSkilltLevel = YandexGame.savesData.characters[0].SkillLevel[0];
+                secondSkilltLevel = YandexGame.savesData.characters[0].SkillLevel[1];
+                thirdSkilltLevel = YandexGame.savesData.characters[0].SkillLevel[2];
+                manaLevel = YandexGame.savesData.characters[0].SkillLevel[4];
                 break;
             case SavesYG.PlayerSkin.Cliric:
-                firstSkilltLevel = CharacterDB.characterList[1].SkillLevel[0];
-                secondSkilltLevel = CharacterDB.characterList[1].SkillLevel[1];
-                thirdSkilltLevel = CharacterDB.characterList[1].SkillLevel[2];
-                manaLevel = CharacterDB.characterList[1].SkillLevel[4];
+                firstSkilltLevel = YandexGame.savesData.characters[1].SkillLevel[0];
+                secondSkilltLevel = YandexGame.savesData.characters[1].SkillLevel[1];
+                thirdSkilltLevel = YandexGame.savesData.characters[1].SkillLevel[2];
+                manaLevel = YandexGame.savesData.characters[1].SkillLevel[4];
                 break;
             case SavesYG.PlayerSkin.Piromant:
-                firstSkilltLevel = CharacterDB.characterList[2].SkillLevel[0];
-                secondSkilltLevel = CharacterDB.characterList[2].SkillLevel[1];
-                thirdSkilltLevel = CharacterDB.characterList[2].SkillLevel[2];
-                manaLevel = CharacterDB.characterList[2].SkillLevel[4];
+                firstSkilltLevel = YandexGame.savesData.characters[2].SkillLevel[0];
+                secondSkilltLevel = YandexGame.savesData.characters[2].SkillLevel[1];
+                thirdSkilltLevel = YandexGame.savesData.characters[2].SkillLevel[2];
+                manaLevel = YandexGame.savesData.characters[2].SkillLevel[4];
                 break;
         }
     }
@@ -169,7 +167,7 @@ public class Player_magic : MonoBehaviour
 
                                 var arrow = new GameObject("Magic arrow");
                                 arrow.transform.position = transform.position;
-                                arrow.AddComponent<Magic_arrow>().Initialize(MousePos, damage: 40 * (secondSkilltLevel * 0.5f), speed: 0.02f, type:"type2");
+                                arrow.AddComponent<Magic_arrow>().Initialize(MousePos, damage: 40 * (secondSkilltLevel * 0.5f), speed: 0.2f, type:"type2");
                                 var spellArrow = Resources.Load<AudioClip>("Sound/Spell/MagicBall");
                                 spellAudioSource.PlayOneShot(spellArrow);
                                 break;
@@ -177,7 +175,7 @@ public class Player_magic : MonoBehaviour
 
                                 var arrow2 = new GameObject("Light sword");
                                 arrow2.transform.position = transform.position;
-                                arrow2.AddComponent<Magic_arrow>().Initialize(MousePos, damage: 35 * (secondSkilltLevel * 0.5f), speed: 0.01625f, type: "type3");
+                                arrow2.AddComponent<Magic_arrow>().Initialize(MousePos, damage: 35 * (secondSkilltLevel * 0.5f), speed: 0.1625f, type: "type3");
 
                                 var spellSword = Resources.Load<AudioClip>("Sound/Spell/SunBlade");
                                 spellAudioSource.PlayOneShot(spellSword);
@@ -189,7 +187,7 @@ public class Player_magic : MonoBehaviour
                                 var rnd = new System.Random(951753268);
                                 var randomDamage = rnd.Next(35, 70) + (3 * secondSkilltLevel);
 
-                                arrow3.AddComponent<Magic_arrow>().Initialize(MousePos, damage: randomDamage, speed: 0.0105f, type: "type4");
+                                arrow3.AddComponent<Magic_arrow>().Initialize(MousePos, damage: randomDamage, speed: 0.105f, type: "type4");
 
                                 var spellFire = Resources.Load<AudioClip>("Sound/Spell/FireBall");
                                 spellAudioSource.PlayOneShot(spellFire);
@@ -240,9 +238,9 @@ public class Player_magic : MonoBehaviour
                                 magma2.transform.position = transform.position;
                                 magma3.transform.position = transform.position;
 
-                                magma1.AddComponent<Magic_arrow>().Initialize(targetLeft, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.01959f, type: "type4");
-                                magma2.AddComponent<Magic_arrow>().Initialize(target, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.01959f, type: "type4");
-                                magma3.AddComponent<Magic_arrow>().Initialize(targetright, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.01959f, type: "type4");
+                                magma1.AddComponent<Magic_arrow>().Initialize(targetLeft, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.1959f, type: "type4");
+                                magma2.AddComponent<Magic_arrow>().Initialize(target, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.1959f, type: "type4");
+                                magma3.AddComponent<Magic_arrow>().Initialize(targetright, damage: 55 * (thirdSkilltLevel * 0.5f), speed: 0.1959f, type: "type4");
 
                                 var spellMagma = Resources.Load<AudioClip>("Sound/Spell/MagmaBall");
                                 spellAudioSource.PlayOneShot(spellMagma);

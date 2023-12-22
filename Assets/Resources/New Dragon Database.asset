@@ -17,7 +17,7 @@ MonoBehaviour:
     sprite: {fileID: 249065879, guid: afd26d5f82ae1dc4c9badcd4db88ca0e, type: 3}
     health: 100
     speedMove: 1
-    speedFireball: 0.06
+    speedFireball: 0.6
     description: "\u041C\u0430\u043B\u0430\u044F \u043A\u0440\u0430\u0441\u043D\u0430\u044F
       \u0432\u0438\u0432\u0435\u0440\u043D\u0430 \u0438\u043B\u0438 \u043F\u0440\u043E\u0441\u0442\u043E
       \u043A\u0440\u0430\u0441\u043D\u0430\u044F \u0432\u0438\u0432\u0435\u0440\u043D\u0430.
@@ -39,7 +39,7 @@ MonoBehaviour:
     sprite: {fileID: 303537883, guid: 624d136c2f49f164cbe06bacd238b21f, type: 3}
     health: 250
     speedMove: 1.6
-    speedFireball: 0.09
+    speedFireball: 0.9
     description: "B\u0438\u0434 \u0437\u0435\u043C\u043D\u043E\u0432\u043E\u0434\u043D\u044B\u0445
       \u0434\u0440\u0430\u043A\u043E\u043D\u0438\u0434\u043E\u0432, \u043E\u0431\u0438\u0442\u0430\u044E\u0449\u0438\u0445
       \u0423 \u0432\u043E\u0434\u043E\u0435\u043C\u043E\u0432, \u0437\u0430\u0447\u0430\u0441\u0442\u0443\u044E

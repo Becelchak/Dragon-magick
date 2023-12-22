@@ -12,19 +12,24 @@ public class DragonManager : MonoBehaviour
     [CanBeNull] public Text description;
     [CanBeNull] public Text parameter;
 
-    private int selectedOption = 0;
-    void Start()
-    {
-        if (YandexGame.SDKEnabled)
-            UpdateDragon();
+    [SerializeField] private bool isBestiary;
 
+    private int selectedOption = 0;
+
+
+    private void OnEnable() => YandexGame.GetDataEvent += GetData;
+    private void OnDisable() => YandexGame.GetDataEvent -= GetData;
+
+    private void GetData()
+    {
+        UpdateDragon();
     }
 
     public void NextOption()
     {
         selectedOption++;
 
-        if (selectedOption >= dragonDB.DragonCount)
+        if (selectedOption >= YandexGame.savesData.dragons.Length)
             selectedOption = 0;
 
         UpdateDragon();
@@ -35,14 +40,15 @@ public class DragonManager : MonoBehaviour
         selectedOption--;
 
         if (selectedOption < 0)
-            selectedOption = dragonDB.DragonCount - 1;
+            selectedOption = YandexGame.savesData.dragons.Length - 1;
 
         UpdateDragon();
     }
 
     public void UpdateDragon()
     {
-        var dragon = dragonDB.GetDragon(selectedOption);
+        var dragon = YandexGame.savesData.dragons[selectedOption];
+        Debug.Log($"{dragon.name}");
         CheckUnlocked(dragon);
         spriteDragon.sprite = dragon.sprite;
         nameDragon.text = dragon.name;
@@ -54,32 +60,24 @@ public class DragonManager : MonoBehaviour
             parameter.text = string.Format("Здоровье: {0} \n Скорость: {1} {2} \n Увеличение награды: {3}", dragon.health,
                 dragon.speedMove, speedWord, dragon.priceModifire);
         }
-        YandexGame.savesData.NowDragon = dragon;
-
-        switch (selectedOption)
-        {
-            case 0:
-                YandexGame.savesData.enemy = SavesYG.DragonType.Vivern;
-                break;
-            case 1:
-                YandexGame.savesData.enemy = SavesYG.DragonType.SwampDragon;
-                break;
-            case 2:
-                YandexGame.savesData.enemy = SavesYG.DragonType.MountainDragon;
-                break;
-        }
-
-        SaveChange();
-
     }
 
     public void SaveChange()
     {
+        YandexGame.savesData.enemy = selectedOption switch
+        {
+            0 => SavesYG.DragonType.Vivern,
+            1 => SavesYG.DragonType.SwampDragon,
+            2 => SavesYG.DragonType.MountainDragon,
+            _ => YandexGame.savesData.enemy
+        };
+        YandexGame.savesData.NowDragon = YandexGame.savesData.dragons[selectedOption];
         YandexGame.SaveProgress();
     }
 
     public void CheckUnlocked(Dragon dragon)
     {
+        Debug.Log($"{dragon.isUnloked}");
         if (!dragon.isUnloked)
         {
             openDragon.SetActive(true);
@@ -94,7 +92,7 @@ public class DragonManager : MonoBehaviour
 
     public void UnlockDragon()
     {
-        var dragon = dragonDB.GetDragon(selectedOption);
+        var dragon = YandexGame.savesData.dragons[selectedOption];
         if (YandexGame.savesData.gold - dragon.price >= 0)
         {
             YandexGame.savesData.gold -= dragon.price;

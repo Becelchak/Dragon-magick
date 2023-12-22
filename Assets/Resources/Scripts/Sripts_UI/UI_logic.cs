@@ -22,4 +22,9 @@ public class UI_logic : MonoBehaviour
     {
         SceneManager.LoadScene("Main game");
     }
+
+    public void ResetSaves()
+    {
+        YandexGame.ResetSaveProgress();
+    }
 }

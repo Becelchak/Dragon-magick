@@ -15,7 +15,7 @@ public class Magic_arrow : MonoBehaviour
     private float death_timer = 0;
     private String type;
 
-    public void Initialize(Vector3 target, float damage = 20, float speed = 0.09f, string type = "common")
+    public void Initialize(Vector3 target, float damage = 20, float speed = 0.9f, string type = "common")
     {
         this.target = target;
         this.damage = damage;

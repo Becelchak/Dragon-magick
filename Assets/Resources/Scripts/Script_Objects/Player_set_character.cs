@@ -15,7 +15,6 @@ public class Player_set_character : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-    private void OnEnable() => YandexGame.GetDataEvent += Prepare;
 
     void Prepare()
     {
@@ -27,19 +26,19 @@ public class Player_set_character : MonoBehaviour
         switch (character)
         {
             case SavesYG.PlayerSkin.Wanderer:
-                skill1.sprite = characterDB.characterList[0].skill1;
-                skill2.sprite = characterDB.characterList[0].skill2;
-                skill3.sprite = characterDB.characterList[0].skill3;
+                skill1.sprite = YandexGame.savesData.characters[0].skill1;
+                skill2.sprite = YandexGame.savesData.characters[0].skill2;
+                skill3.sprite = YandexGame.savesData.characters[0].skill3;
                 break;
             case SavesYG.PlayerSkin.Cliric:
-                skill1.sprite = characterDB.characterList[1].skill1;
-                skill2.sprite = characterDB.characterList[1].skill2;
-                skill3.sprite = characterDB.characterList[1].skill3;
+                skill1.sprite = YandexGame.savesData.characters[1].skill1;
+                skill2.sprite = YandexGame.savesData.characters[1].skill2;
+                skill3.sprite = YandexGame.savesData.characters[1].skill3;
                 break;
             case SavesYG.PlayerSkin.Piromant:
-                skill1.sprite = characterDB.characterList[2].skill1;
-                skill2.sprite = characterDB.characterList[2].skill2;
-                skill3.sprite = characterDB.characterList[2].skill3;
+                skill1.sprite = YandexGame.savesData.characters[2].skill1;
+                skill2.sprite = YandexGame.savesData.characters[2].skill2;
+                skill3.sprite = YandexGame.savesData.characters[2].skill3;
                 break;
         }
 

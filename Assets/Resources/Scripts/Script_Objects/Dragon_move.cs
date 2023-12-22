@@ -59,7 +59,18 @@ public class Dragon_move : MonoBehaviour
 
     void Prepare()
     {
-        speed = YandexGame.savesData.NowDragon.speedMove;
+        switch (YandexGame.savesData.enemy)
+        {
+            case SavesYG.DragonType.Vivern:
+                speed = YandexGame.savesData.dragons[0].speedMove;
+                break;
+            case SavesYG.DragonType.SwampDragon:
+                speed = YandexGame.savesData.dragons[1].speedMove;
+                break;
+            case SavesYG.DragonType.MountainDragon:
+                speed = YandexGame.savesData.dragons[2].speedMove;
+                break;
+        }
     }
 
     void Update()

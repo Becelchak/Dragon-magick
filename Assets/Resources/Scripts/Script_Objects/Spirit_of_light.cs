@@ -13,7 +13,7 @@ public class Spirit_of_light : MonoBehaviour
     private float timer;
     private float death_timer = 0;
 
-    public void Initialize(float damageModification, float speed = 0.0425f)
+    public void Initialize(float damageModification, float speed = 0.0825f)
     {
         dragon = GameObject.Find("Dragon");
         var rnd = new System.Random(179358246);
